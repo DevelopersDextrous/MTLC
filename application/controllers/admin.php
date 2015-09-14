@@ -10,20 +10,23 @@ class Admin extends CI_Controller {
 	public function validate() {
 		$data['uname'] = $_POST['user_name'];
 		$data['pwd'] = $_POST['password'];
-
+		
 		$this->load->model('login_model');
 		$verify = $this->login_model->validate_credentials($data);
 
 		if($verify){
-			// $newdata = array(
-   //    			'user_id'  => $verify->id,
-   //    			'user_name'  => $verify->user_name,
-   //    			'is_logged_in'  => TRUE,
-   //  		);
+			foreach ($verify as $key) {
+				$newdata = array(
+      			'user_id'  => $key->id,
+      			'user_name'  => $_POST['user_name'],
+      			'is_logged_in'  => TRUE,
+    		);
    
-   // 			$this->session->set_userdata($newdata);
+   			$this->session->set_userdata($newdata);
+   			print_r($newdata);
 
-			$this->load->view('admin_home');
+			}
+			//$this->load->view('admin_home');
 		}
 		else{
 			echo "error";

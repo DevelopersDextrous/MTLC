@@ -8,23 +8,30 @@ class Login_model extends CI_Model {
                'password' => md5($data['pwd'])
             );
 
-		$q = $this->db->select('first_name, last_name')             
-					-> from('admin')
-					->where($d)
-					->get();
+		$this->db->select('id');             
+		$this->db->from('admin');			
+		$this->db->where($d);
+		$q = $this->db->get();
+
+
+		// $uname = $data['uname'];
+		// $pwd = md5($data['pwd']);
 					 
 
-		// $q = $this->db->query('SELECT first_name, last_name FROM admin WHERE user_name = $data['user_name'] and password = md5($data['password'])
+		// $q = $this->db->query('SELECT id FROM admin WHERE user_name = "$uname" AND password = "$pwd"
 		// ');
+
+		// $sql = "SELECT first_name, last_name FROM admin WHERE user_name = ? AND password = ?"; 
+
+		// $q = $this->db->query($sql, array($data['uname'], md5($data['pwd']) ));
 
 		if($q->num_rows() == 1){
 			return $q->result();
-			echo "blah blah";
-			echo $q->first_name;
-			echo $q->last_name;
-		}
+			
+			}
 		else {
-			return FALSE;
+			echo "nothing";
+			//return FALSE;
 		}
 	}
 

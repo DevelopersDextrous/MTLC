@@ -8,10 +8,10 @@
       <div class="modal-body">
         <form action="<?php echo base_url(); ?>index.php/admin/validate" class="form-horizontal" method="post">
         <label for="user_name">User Name:</label>
-        <input type="text" name="user_name">
+        <input type="text" name="user_name" placeholder="User Name">
         <br>
         <label for="password">Password</label>
-        <input type="password" name="password">
+        <input type="password" name="password" placeholder="Password">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
