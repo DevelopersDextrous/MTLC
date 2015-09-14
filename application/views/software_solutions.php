@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Risk Management</title>
+    <title>Software Solutions</title>
     
-    <!-- Styles -->
+     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
-    <link href="js/dropdown-menu/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Bootstrap -->
-    <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
-    <link href="js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
-    <link href="style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
+    <link href="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
+    <link href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Bootstrap -->
+    <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
+    <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
+    <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -153,27 +154,18 @@
                             <div class="col-lg-12 col-md-12">
 
 
-                                <h1 class="page-title">Risk Management</h1>
+                            <h1 class="page-title">Software Solutions</h1>
                                 
                                 <div class="news-body">
 
                                     <p class="call-out">
-                                    A multitude of risks exist in today's business environment. At <b>MTLC</b> we pride ourselves on
-                                        our proven ability to accurately assess risk and to protect you from vulnerabilities inherent in
-                                        your enterprise. An effective risk management strategy will improve performance, allow
-                                        completion of goals, and protect the value of your business.
-                                    </p>
-
-                                    <p>
-                                        A risk assessment includes:
-                                        <div style="margin-left:1%;">
-                                            <ol>Assembling relevant information about your business and its market</ol>
-                                            <ol>Identifying major risks facing your organisation</ol>
-                                            <ol>Developing a risk strategy</ol>
-                                            <ol>Implementation of the risk management procedures</ol>
-                                        </div>
-
-                                    </p>
+                                        Let us help you make the right choice when it comes to accounting software. A decent
+                                        accounting system will help you keep track of your cashflow and give you the option to
+                                        complete GST Returns easily. Choosing the right system for your business can be a difficult
+                                        one - after all there are over sixty different accounting packages available in New Zealand.
+                                        Contact us and we will be able to recommend the best accounting solution for your
+                                        business.
+                                    </p>                           
                                 </div>
 
                             </div>
@@ -293,168 +285,36 @@
 
     </div><!-- content wrapper end -->
     
-    <div id="k-footer"><!-- footer -->
-
-        <div class="container"><!-- container -->
-
-            <div class="row no-gutter"><!-- row -->
-
-                <div class="col-lg-4 col-md-4"><!-- widgets column left -->
-
-                    <div class="col-padded col-naked">
-
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-
-                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
-
-                                <h1 class="title-widget">Useful links</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">Placement Exam Schedule</a></li>
-                                    <li><a href="#" title="menu item">Superintendent's Hearing Audio</a></li>
-                                    <li><a href="#" title="menu item">Budget Central</a></li>
-                                    <li><a href="#" title="menu item">Job Opportunities - Application</a></li>
-                                    <li><a href="#" title="menu item">College Acceptances as of May 12</a></li>
-                                </ul>
-
-                            </li>
-                            
-                        </ul><!-- widgets end -->
-
-                    </div>
-                    
-                </div><!-- widgets column left end -->
-                
-                <div class="col-lg-4 col-md-4"><!-- widgets column center -->
-
-                    <div class="col-padded col-naked">
-
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-
-                            <li class="widget-container widget_recent_news"><!-- widgets list -->
-
-                                <h1 class="title-widget">School Contact</h1>
-                                
-                                <div itemscope itemtype="http://data-vocabulary.org/Organization"> 
-
-                                    <h2 class="title-median m-contact-subject" itemprop="name">Buntington Public Schools</h2>
-
-                                    <div class="m-contact-address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                                        <span class="m-contact-street" itemprop="street-address">19 Tower Avenue, Buntington Station</span>
-                                        <span class="m-contact-city-region"><span class="m-contact-city" itemprop="locality">New York</span>, <span class="m-contact-region" itemprop="region">NY</span></span>
-                                        <span class="m-contact-zip-country"><span class="m-contact-zip" itemprop="postal-code">11506</span> <span class="m-contact-country" itemprop="country-name">USA</span></span>
-                                    </div>
-
-                                    <div class="m-contact-tel-fax">
-                                        <span class="m-contact-tel">Tel: <span itemprop="tel">631-551-3678</span></span>
-                                        <span class="m-contact-fax">Fax: <span itemprop="fax">631-551-3688</span></span>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="social-icons">
-
-                                    <ul class="list-unstyled list-inline">
-
-                                        <li><a href="#" title="Contact us"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </li>
-                            
-                        </ul>
-                        
-                    </div>
-                    
-                </div><!-- widgets column center end -->
-                
-                <div class="col-lg-4 col-md-4"><!-- widgets column right -->
-
-                    <div class="col-padded col-naked">
-
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-
-                            <li class="widget-container widget_sofa_flickr"><!-- widgets list -->
-
-                                <h1 class="title-widget">Flickr Stream</h1>
-                                
-                                <ul class="k-flickr-photos list-unstyled">
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-1.jpg" alt="Photo 1" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-2.jpg" alt="Photo 2" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-3.jpg" alt="Photo 3" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-4.jpg" alt="Photo 4" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-5.jpg" alt="Photo 5" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-6.jpg" alt="Photo 6" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-7.jpg" alt="Photo 7" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-8.jpg" alt="Photo 8" /></a></li>
-                                </ul>
-
-                            </li>
-                            
-                        </ul> 
-                        
-                    </div>
-
-                </div><!-- widgets column right end -->
-
-            </div><!-- row end -->
-
-        </div><!-- container end -->
-
-    </div><!-- footer end -->
-    
-    <div id="k-subfooter"><!-- subfooter -->
-
-        <div class="container"><!-- container -->
-
-            <div class="row"><!-- row -->
-
-                <div class="col-lg-12">
-
-                    <p class="copy-text text-inverse">
-                        &copy; 2015 Buntington Public Schools. All rights reserved.
-                    </p>
-
-                </div>
-
-            </div><!-- row end -->
-
-        </div><!-- container end -->
-
-    </div><!-- subfooter end -->
+    <?php include 'include/footer.php' ?>
 
     <!-- jQuery -->
-    <script src="jQuery/jquery-2.1.1.min.js"></script>
-    <script src="jQuery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
     
     <!-- Bootstrap -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
     
     <!-- Drop-down -->
-    <script src="js/dropdown-menu/dropdown-menu.js"></script>
+    <script src="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.js"></script>
     
     <!-- Fancybox -->
-    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="js/fancybox/jquery.fancybox-media.js"></script><!-- Fancybox media -->
+    <script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox-media.js"></script><!-- Fancybox media -->
     
     <!-- Responsive videos -->
-    <script src="js/jquery.fitvids.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery.fitvids.js"></script>
     
     <!-- Audio player -->
-    <script src="js/audioplayer/audioplayer.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/audioplayer/audioplayer.min.js"></script>
     
     <!-- Pie charts -->
-    <script src="js/jquery.easy-pie-chart.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery.easy-pie-chart.js"></script>
     
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
     
     <!-- Theme -->
-    <script src="js/theme.js"></script>
+    <script src="<?php echo base_url(); ?>js/theme.js"></script>
     
 </body>
 </html>
