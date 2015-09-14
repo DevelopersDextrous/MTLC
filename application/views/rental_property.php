@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trusts</title>
+    <title>Rental Property</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -14,34 +14,34 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
 
-  </head>
-  
-  <body role="document" class="page">
-  
+</head>
+
+<body role="document" class="page">
+
     <!-- device test, don't remove. javascript needed! -->
     <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span>
     <!-- device test end -->
     
     <div id="k-head" class="container"><!-- container + head wrapper -->
-    
+
         <div class="row"><!-- row -->
-        
+
             <nav class="k-functional-navig"><!-- functional navig -->
-        
+
                 <ul class="list-inline pull-right">
                     <li><a href="#">Jobs</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Directions</a></li>
                 </ul>
-        
+
             </nav><!-- functional navig end -->
-        
+
             <div class="col-lg-12">
-        
+
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
-                
+
                     <h1 class="k-logo">
                         <a href="index.html" title="Home Page">
                             <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
@@ -49,11 +49,11 @@
                     </h1>
                     
                     <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"></span></a><!-- alternative menu button -->
-            
+
                 </div><!-- site logo end -->
 
                 <nav id="k-menu" class="k-main-navig"><!-- main navig -->
-        
+
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
                             <a href="news.html" title="Our School News">News</a>
@@ -105,130 +105,106 @@
                             <a href="contact-us.html" title="School Contacts">Contact Us</a>
                         </li>
                     </ul>
-        
+
                 </nav><!-- main navig end -->
-            
+
             </div>
             
         </div><!-- row end -->
-    
+
     </div><!-- container + head wrapper end -->
     
     <div id="k-body"><!-- content wrapper -->
-    
+
         <div class="container"><!-- container -->
-        
-            <div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
-            
+
+           
             <div class="row no-gutter"><!-- row -->
-                
+
                 <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
-                    
+
                     <div class="col-padded"><!-- inner custom column -->
-                    
+
                         <div class="row gutter"><!-- row -->
-                        
+
                             <div class="col-lg-12 col-md-12">
-                    
-                                
-                                <h1 class="page-title">Trusts</h1>
+
+
+                                <h1 class="page-title">Rental Property</h1>
                                 
                                 <div class="news-body">
-                                
+
                                     <p class="call-out">
-                                    A trust provides a valuable way of protecting the assets you have accumulated for the benefit of others.
-                                    </p>
-                                
-                                    <p>
-                                    We have extensive experience and so are able to offer specialist advice on trust formation, ensuring all statutory requirements are met. Obligations for trustees can often be onerous, and our assistance in trust administration will be invaluable.
+                                        At <b>MTLC</b> we have the necessary expertise to assist in a variety of areas in relation to
+                                        residential and commercial property.
+
                                     </p>
 
                                     <p>
-                                        We are able to:
+                                        The services we offer our clients include:
+                                        <div style="margin-left:5%;">
+                                         <li>Advice on the purchasing of a property</li>
+                                         <li>Reviews of lease agreements</li>
+                                         <li>Advice on funding</li>
+                                         <li>Guidance in tax minimisation</li>
+                                         <li>Advice on ownership structure</li>
 
-                                        <ul class="l1">
-                                            <li>Trust administration</li>
-                                            <li>Minute keeping services</li>
-                                            <li>Annual accounts</li>
-                                            <li>Taxation</li>
-                                            <li>Asset management</li>
-                                            <li>Investment monitoring</li>
-                                            <li>Income distribution</li>
-                                        </ul>
-                                    </p>
+                                        </div>
 
-                                    <p>
-                                        <a href="contact_us">Contact us</a> today to ensure your trust is formed and administered as effectively as possible, covering all legal requirements and so allowing it to fulfil its purpose.
+                                     </p>
+
+                                     <p>The importance of forecasts in making a residential investment cannot be emphasised
+                                        enough. We are able to provide for you:
+                                        <div style="margin-left:1%;">
+                                            <ol>Forecasts of revenue returns</ol>
+                                            <ol>Forecasts of financial position</ol>
+                                            <ol>Forecasts of potential growth</ol>
+                                        </div>
                                     </p>
-                                    
                                 </div>
-                            
-                            </div>
-                        
-                        </div><!-- row end -->
-                                
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- doc body wrapper end -->
-                
-                <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
-                    
-                    <div class="col-padded col-shaded"><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                            <li class="widget-container widget_nav_menu"><!-- widget -->
-                    
-                                <h1 class="title-widget">Select</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">News Archive</a></li>
-                                    <li><a href="#" title="menu item">Tradition of School Events</a></li>
-                                    <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
-                                    <li><a href="#" title="menu item">Trends and Tips</a></li>
-                                    <li><a href="#" title="menu item">Events Poll</a></li>
-                                </ul>
-                    
-                            </li>
-                            
-                            
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- sidebar wrapper end -->
-            
-            </div><!-- row end -->
-        
-        </div><!-- container end -->
-    
-    </div><!-- content wrapper end -->
-    
-     <?php include 'include/footer.php' ?>
 
+                        </div>
+
+                    </div><!-- row end -->
+
+
+                </div><!-- inner custom column end -->
+
+            </div><!-- doc body wrapper end -->
+
+            <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
+
+                <div class="col-padded col-shaded"><!-- inner custom column -->
+
+                    <ul class="list-unstyled clear-margins"><!-- widgets -->
+
+                        <li class="widget-container widget_nav_menu"><!-- widget -->
+
+                            <h1 class="title-widget">Select</h1>
+
+                            <ul>
+                                <li><a href="#" title="menu item">News Archive</a></li>
+                                <li><a href="#" title="menu item">Tradition of School Events</a></li>
+                                <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
+                                <li><a href="#" title="menu item">Trends and Tips</a></li>
+                                <li><a href="#" title="menu item">Events Poll</a></li>
+                            </ul>
+
+                        </li>                      
+
+                    </ul><!-- widgets end -->
+
+                </div><!-- inner custom column end -->
+
+            </div><!-- sidebar wrapper end -->
+
+        </div><!-- row end -->
+
+    </div><!-- container end -->
+
+</div><!-- content wrapper end -->
+
+<?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
@@ -257,6 +233,6 @@
     
     <!-- Theme -->
     <script src="<?php echo base_url(); ?>js/theme.js"></script>
-    
-  </body>
+
+</body>
 </html>

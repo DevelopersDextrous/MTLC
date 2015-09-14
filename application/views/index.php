@@ -14,7 +14,7 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
 
   </head>
   
@@ -44,7 +44,7 @@
                 
                     <h1 class="k-logo">
                         <a href="index.html" title="Home Page">
-                            <img src="img/site-logo.png" alt="Site Logo" class="img-responsive"  height="200" width="200" />
+                            <img src="img/site-logo.png" alt="Site Logo" class="img-responsive"/>
                         </a>
                     </h1>
                     
@@ -144,32 +144,7 @@
     <div id="k-body"><!-- content wrapper -->
     
     	<div class="container"><!-- container -->
-        
-        	<div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-            	<div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                	<ol class="breadcrumb">
-                    	<li><a href="#">Home</a></li>
-                        <li class="active">Page Example</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->
-                
-            </div><!-- row end -->
-            
+
             <div class="row no-gutter fullwidth"><!-- row -->
             
                 <div class="col-lg-12 clearfix"><!-- featured posts slider -->
@@ -500,127 +475,8 @@
     
     </div><!-- content wrapper end -->
     
-    <div id="k-footer"><!-- footer -->
     
-    	<div class="container"><!-- container -->
-        
-        	<div class="row no-gutter"><!-- row -->
-            
-            	<div class="col-lg-4 col-md-4"><!-- widgets column left -->
-            
-                    <div class="col-padded col-naked">
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Useful links</h1>
-                                
-                                <ul>
-                                	<li><a href="#" title="menu item">Placement Exam Schedule</a></li>
-                                    <li><a href="#" title="menu item">Superintendent's Hearing Audio</a></li>
-                                    <li><a href="#" title="menu item">Budget Central</a></li>
-                                    <li><a href="#" title="menu item">Job Opportunities - Application</a></li>
-                                    <li><a href="#" title="menu item">College Acceptances as of May 12</a></li>
-                                </ul>
-                    
-							</li>
-                            
-                        </ul>
-                         
-                    </div>
-                    
-                </div><!-- widgets column left end -->
-                
-                <div class="col-lg-4 col-md-4"><!-- widgets column center -->
-                
-                    <div class="col-padded col-naked">
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">School Contact</h1>
-                                
-                                <div itemscope itemtype="http://data-vocabulary.org/Organization"> 
-                                
-                                	<h2 class="title-median m-contact-subject" itemprop="name">Buntington Public Schools</h2>
-                                
-                                	<div class="m-contact-address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                                		<span class="m-contact-street" itemprop="street-address">19 Tower Avenue, Buntington Station</span>
-                                		<span class="m-contact-city-region"><span class="m-contact-city" itemprop="locality">New York</span>, <span class="m-contact-region" itemprop="region">NY</span></span>
-                                		<span class="m-contact-zip-country"><span class="m-contact-zip" itemprop="postal-code">11506</span> <span class="m-contact-country" itemprop="country-name">USA</span></span>
-                                	</div>
-                                     
-                                	<div class="m-contact-tel-fax">
-                                    	<span class="m-contact-tel">Tel: <span itemprop="tel">631-551-3678</span></span>
-                                    	<span class="m-contact-fax">Fax: <span itemprop="fax">631-551-3688</span></span>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="social-icons">
-                                
-                                	<ul class="list-unstyled list-inline">
-                                    
-                                    	<li><a href="#" title="Contact us"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    
-                                    </ul>
-                                
-                                </div>
-                    
-							</li>
-                            
-                        </ul>
-                        
-                    </div>
-                    
-                </div><!-- widgets column center end -->
-                
-                <div class="col-lg-4 col-md-4"><!-- widgets column right -->
-                
-                    <div class="col-padded col-naked">
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_sofa_flickr"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Flickr Stream</h1>
-                                
-                                <ul class="k-flickr-photos list-unstyled">
-                                	<li><a href="#" title="Flickr photo"><img src="img/flickr-1.jpg" alt="Photo 1" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-2.jpg" alt="Photo 2" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-3.jpg" alt="Photo 3" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-4.jpg" alt="Photo 4" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-5.jpg" alt="Photo 5" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-6.jpg" alt="Photo 6" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-7.jpg" alt="Photo 7" /></a></li>
-                                    <li><a href="#" title="Flickr photo"><img src="img/flickr-8.jpg" alt="Photo 8" /></a></li>
-                                </ul>
-                    
-							</li>
-                            
-                        </ul> 
-                        
-                    </div>
-                
-                </div><!-- widgets column right end -->
-            
-            </div><!-- row end -->
-        
-        </div><!-- container end -->
-    
-    </div><!-- footer end -->
-    
-    <div id="k-subfooter"><!-- subfooter -->
-    
-    </div><!-- subfooter end -->
-    <script>
-      
-           // document.getElementById("k-subfooter").innerHTML='<object type="text/html" data="include/footer.html" ></object>';
-</script>
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
@@ -649,12 +505,6 @@
     
     <!-- Theme -->
     <script src="<?php echo base_url(); ?>js/theme.js"></script>
-
-     <script> 
-    $(document).ready( function() {
-      $("#k-subfooter").load("include/footer.html"); 
-    });
-    </script> 
     
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trusts</title>
+    <title>Office Duties</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -14,7 +14,7 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
 
   </head>
   
@@ -117,31 +117,6 @@
     <div id="k-body"><!-- content wrapper -->
     
         <div class="container"><!-- container -->
-        
-            <div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
             
             <div class="row no-gutter"><!-- row -->
                 
@@ -154,35 +129,23 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Trusts</h1>
+                                <h1 class="page-title">Office Duties</h1>
                                 
                                 <div class="news-body">
                                 
+                                    
                                     <p class="call-out">
-                                    A trust provides a valuable way of protecting the assets you have accumulated for the benefit of others.
-                                    </p>
-                                
-                                    <p>
-                                    We have extensive experience and so are able to offer specialist advice on trust formation, ensuring all statutory requirements are met. Obligations for trustees can often be onerous, and our assistance in trust administration will be invaluable.
-                                    </p>
-
-                                    <p>
-                                        We are able to:
+                                        Here at <b>MTLC</b> we understand that day to day office duties are not everyone's cup of tea. To this end we are happy to help out with some or all of the following services:
 
                                         <ul class="l1">
-                                            <li>Trust administration</li>
-                                            <li>Minute keeping services</li>
-                                            <li>Annual accounts</li>
-                                            <li>Taxation</li>
-                                            <li>Asset management</li>
-                                            <li>Investment monitoring</li>
-                                            <li>Income distribution</li>
+                                            <li>Wages Processing</li>
+                                            <li>Payment and processing of creditors</li>
+                                            <li>Collection and banking of debtors</li>
+                                            <li>Various secretarial tasks</li>
+                                            <li>Training in office duties</li>
                                         </ul>
                                     </p>
 
-                                    <p>
-                                        <a href="contact_us">Contact us</a> today to ensure your trust is formed and administered as effectively as possible, covering all legal requirements and so allowing it to fulfil its purpose.
-                                    </p>
                                     
                                 </div>
                             
@@ -227,8 +190,7 @@
     
     </div><!-- content wrapper end -->
     
-     <?php include 'include/footer.php' ?>
-
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>

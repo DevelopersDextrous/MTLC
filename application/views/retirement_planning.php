@@ -14,7 +14,7 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
 
   </head>
   
@@ -44,7 +44,7 @@
                 
                     <h1 class="k-logo">
                         <a href="index.html" title="Home Page">
-                            <img src="img/site-logo.png" alt="Site Logo" class="img-responsive" />
+                            <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
                         </a>
                     </h1>
                     
@@ -117,31 +117,6 @@
     <div id="k-body"><!-- content wrapper -->
     
         <div class="container"><!-- container -->
-        
-            <div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
             
             <div class="row no-gutter"><!-- row -->
                 
@@ -211,8 +186,7 @@
     
     </div><!-- content wrapper end -->
     
-    <?php include 'include/footer.php' ?>
-
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
