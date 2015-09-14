@@ -44,7 +44,7 @@
                 
                     <h1 class="k-logo">
                         <a href="index.html" title="Home Page">
-                            <img src="img/site-logo.png" alt="Site Logo" class="img-responsive" />
+                            <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
                         </a>
                     </h1>
                     
