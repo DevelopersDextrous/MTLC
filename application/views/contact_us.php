@@ -177,7 +177,43 @@
                                         
                                     </table>
 
-                                    
+                                    <div class="page-header">
+                                        <h3>Send Message</h3>
+                                        </div>
+
+                                        <form class="form-horizontal" method="post" action="">
+                                        <div class="form-group">
+                                        <label for="name" class="col-sm-2 control-label">Name</label>
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control" id="name" name="name" placeholder="Your name...">
+                                      </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="subject" class="col-sm-2 control-label">Subject</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                    <label for="messege" class="col-sm-2 control-label">Messege</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="messege" rows="5" name="messege" placeholder="Write something for us..."></textarea>
+                                  </div>
+                              </div>
+
+                              
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                              </div>
+                          </div>
+                      </form>
                                     
                                 </div>
                             
