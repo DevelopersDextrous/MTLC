@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Business Start-up</title>
+    <title>Admin Home</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -14,7 +14,13 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+
+    <style>
+    table {margin: 10px 0 10px 0;}
+        table tr td {width: 250px; text-align: center;}
+    
+    </style>   
 
   </head>
   
@@ -31,7 +37,9 @@
             <nav class="k-functional-navig"><!-- functional navig -->
         
                 <ul class="list-inline pull-right">
-                    <li><a href="#mymodal" data-toggle="modal" data-target="#myModal">Admin Login</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Directions</a></li>
                 </ul>
         
             </nav><!-- functional navig end -->
@@ -115,31 +123,6 @@
     <div id="k-body"><!-- content wrapper -->
     
         <div class="container"><!-- container -->
-        
-            <div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
             
             <div class="row no-gutter"><!-- row -->
                 
@@ -152,29 +135,31 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Business Start-up</h1>
+                                <h1 class="page-title">Welcome Admin</h1>
                                 
                                 <div class="news-body">
+                                    
                                 
-                                    <p class="call-out">
-                                    Let us help you turn your business idea into a reality.
-                                    </p>
-                                
+                                    <table class="table">
+                                    
+                                        
+                                        
+                                        <tr>
+                                            <td><b>Admin:</b></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/admin/create_new" class="btn btn-success">Create New</a></td>
+                                            <td><a href="" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> <b>Article</b> </td>
+                                            <td><a href="" class="btn btn-success">Create New</a></td>
+                                            <td><a href="" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
+                                    </table>
+
                                     
 
-                                    <p>
-                                       If you have a good idea for a new business venture but don't have expertise in the legal or financial aspects of creating a new business, we can help you:
-
-                                        <ul class="l1">
-                                            <li>Decide on the most suitable structure for your business - sole trader,partnership, limited company, or trading trust.</li>
-                                            <li>Prepare a business plan, cash flow projections and budgets.</li>
-                                            <li>Assess your finance requirements, advise on the best sources of finance, and draw up the necessary proposals</li>
-                                            <li>Establish a good working relationship with your bank</li>
-                                            <li>Complete any registration procedures with Companies office, Inland Revenue, or Customs and Excise</li>
-                                            <li>Deal with company secretarial issues</li>
-                                            <li>Set up a recording system for your internal use and for complying with statutory requirement.</li>
-                                        </ul>
-                                    </p>
 
                                     
                                     
@@ -221,15 +206,8 @@
     
     </div><!-- content wrapper end -->
     
-    <?php include 'include/footer.php' ?>
-    <?php include 'include/modal.php' ?>
-
-    // <script>
-    //     $('#myModal').on('shown.bs.modal', function () {
-    //         $('#myInput').focus()
-    //     })
-    // </script>
-
+    
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Business Start-up</title>
+    <title>Create New Admin</title>
     
-    <!-- Styles -->
+     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
     <link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
     <link href="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
@@ -31,7 +31,9 @@
             <nav class="k-functional-navig"><!-- functional navig -->
         
                 <ul class="list-inline pull-right">
-                    <li><a href="#mymodal" data-toggle="modal" data-target="#myModal">Admin Login</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Directions</a></li>
                 </ul>
         
             </nav><!-- functional navig end -->
@@ -152,31 +154,34 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Business Start-up</h1>
+                                <h1 class="page-title">Create New Admin</h1>
                                 
                                 <div class="news-body">
                                 
-                                    <p class="call-out">
-                                    Let us help you turn your business idea into a reality.
-                                    </p>
-                                
-                                    
+                                    <form action="<?php echo base_url(); ?>index.php/admin/confirm_new_admin" method="post" class="form-horizontal">
+                                        <label for="first_name">First Name:</label>
+                                        <input type="text" name="first_name" placeholder="First Name">
+                                        <br>
 
-                                    <p>
-                                       If you have a good idea for a new business venture but don't have expertise in the legal or financial aspects of creating a new business, we can help you:
+                                        <label for="last_name">Last Name:</label>
+                                        <input type="text" name="last_name" placeholder="Last Name">
+                                        <br>
 
-                                        <ul class="l1">
-                                            <li>Decide on the most suitable structure for your business - sole trader,partnership, limited company, or trading trust.</li>
-                                            <li>Prepare a business plan, cash flow projections and budgets.</li>
-                                            <li>Assess your finance requirements, advise on the best sources of finance, and draw up the necessary proposals</li>
-                                            <li>Establish a good working relationship with your bank</li>
-                                            <li>Complete any registration procedures with Companies office, Inland Revenue, or Customs and Excise</li>
-                                            <li>Deal with company secretarial issues</li>
-                                            <li>Set up a recording system for your internal use and for complying with statutory requirement.</li>
-                                        </ul>
-                                    </p>
-
-                                    
+                                        <label for="user_name">User Name:</label>
+                                        <input type="text" name="user_name" placeholder="User Name">
+                                        <br>
+                                        <label for="email">Email:</label>
+                                        <input type="email" name="email" placeholder="Email">
+                                        <br>
+                                        <label for="password">Password:</label>
+                                        <input type="password" name="password" placeholder="Password">
+                                        <br>
+                                        <label for="confirm_password">Confirm Password:</label>
+                                        <input type="password" name="confirm_password" placeholder="Confirm Password">
+                                        <br>
+                                        <input type="submit" class="btn btn-large btn-success" value="Confirm">
+                                    </form>
+                                    <a href="#" class="btn btn-large btn-info">Cancel</a>
                                     
                                 </div>
                             
@@ -222,13 +227,6 @@
     </div><!-- content wrapper end -->
     
     <?php include 'include/footer.php' ?>
-    <?php include 'include/modal.php' ?>
-
-    // <script>
-    //     $('#myModal').on('shown.bs.modal', function () {
-    //         $('#myInput').focus()
-    //     })
-    // </script>
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
