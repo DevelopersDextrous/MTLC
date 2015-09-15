@@ -138,27 +138,32 @@
                                 <h1 class="page-title">Welcome Admin</h1>
                                 
                                 <div class="news-body">
-                                    
+                                    <?php foreach ($d as $key) {
+                                        if($key == 'N/A')
+                                            ?>
+                                        <h4>You are the only admin, no other data exists to be deleted!</h4>
+                                    <?php else { ?>
+
+                                   
                                 
                                     <table class="table">
                                     
-                                        
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th></th>
                                         
                                         <tr>
-                                            <td><b>Admin:</b></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/admin/create_new" class="btn btn-success">Create New</a></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/admin/load_admin_list" class="btn btn-danger">Delete</a></td>
+                                            <td><?php echo $key->first_name." ".$key->last_name; ?></td>
+                                            <td><?php echo $key->email; ?></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/admin/delete_admin?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
-                                        <tr>
-                                            <td> <b>Article</b> </td>
-                                            <td><a href="" class="btn btn-success">Create New</a></td>
-                                            <td><a href="" class="btn btn-danger">Delete</a></td>
-                                        </tr>
+                                        
 
                                     </table>
 
-                                    
+                                    <?php } 
+                                    } ?>
 
 
                                     

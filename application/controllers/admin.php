@@ -60,4 +60,12 @@ class Admin extends CI_Controller {
 	   			echo "failure";
 	  	}
 	}
+
+	public function load_admin_list()
+	{
+		$this->load->model('login_model');
+		$d = $this->login_model->get_admin();
+
+		$this->load->view('admin_list', $d);
+	}
 }

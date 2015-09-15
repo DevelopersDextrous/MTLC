@@ -28,7 +28,7 @@ class Login_model extends CI_Model {
 		if($q->num_rows() == 1){
 			return $q->result();
 			
-			}
+		}
 		else {
 			echo "nothing";
 			//return FALSE;
@@ -50,5 +50,21 @@ class Login_model extends CI_Model {
 			return true;
 		else
 			return false;
+	}
+
+	public function get_admin(){
+		$q = $this->db->query('SELECT * FROM admin');
+
+		if($q->num_rows() > 0)
+		{
+			foreach ($q as $row) {
+				$data [] = $row;
+			}
+			return $data;
+		}
+
+		else if($q->num_rows() == 1) {
+			return 'N/A';
+		}
 	}
 }
