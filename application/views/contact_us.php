@@ -19,7 +19,9 @@
     <style>
     table {margin: 10px 0 10px 0;}
         table tr td {width: 250px; text-align: center;}
-    
+    .page-header{
+        margin-top: 15%;
+    }
     </style>   
 
   </head>
@@ -140,7 +142,7 @@
                                 <div class="news-body">
                                     <p class="call-out">At <b>MTLC</b>, we have made it easy to make an appointment with us. Simply enter your details in our postal or E-mail or call us the above numbers.</p>
                                 
-                                    <table class="table-bordered">
+                                    <table class="table table-bordered">
                                     <caption>Postal Address for all Offices</caption>
                                         
                                         
@@ -150,7 +152,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="table-bordered">
+                                    <table class="table table-bordered">
                                     <caption>Phone &amp; Fax Number for all Offices</caption>
                                         
                                         
@@ -165,7 +167,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="table-bordered">
+                                    <table class="table table-bordered">
                                     <caption>E-mail for all Offices</caption>
                                         
                                         

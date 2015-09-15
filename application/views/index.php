@@ -28,15 +28,7 @@
     
         <div class="row"><!-- row -->
         
-            <nav class="k-functional-navig"><!-- functional navig -->
-        
-                <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
-                </ul>
-        
-            </nav><!-- functional navig end -->
+            <?php include 'include/top_right.php';?>
         
             <div class="col-lg-12">
         
