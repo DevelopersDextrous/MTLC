@@ -24,7 +24,8 @@ class Service extends CI_Controller {
 	}
 
 	public function contact_us(){
-		$this->load->view('contact_us');
+		$data['errors'] = array();
+		$this->load->view('contact_us',$data);
 	}
 
 	public function estate_planning(){

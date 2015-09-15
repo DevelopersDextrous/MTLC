@@ -4,19 +4,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Article extends CI_Controller {
 
 	public function index(){
-		$this->load->view('create_article');
+		$data['errors'] = array();
+		$this->load->view('create_article',$data);
 	}
 
 	public function publish(){
 
 		$this->load->library('form_validation');
-		$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
 		$this->form_validation->set_rules('author', 'Author Name' , 'required');
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('content', 'Content', 'required');
 
 		if($this->form_validation->run() == FALSE) {
-			redirect('article');
+			$data['errors'] = validation_errors();
+			$this->load->view('create_article',$data);
 		}
 		else
 		{

@@ -134,12 +134,11 @@
                                 
                                 <div class="news-body">
 
-                                  <form class="form-horizontal" method="post" action="article/publish">
+                                  <form class="form-horizontal" method="post" action="<?php echo base_url(); ?>index.php/article/publish">
                                     <div class="form-group">
                                         <label for="author" class="col-sm-2 control-label">Authors's Name</label>
                                         <div class="col-sm-10">
                                           <input type="text" class="form-control" id="author" name="author" placeholder="Name of the author...">
-                                          <?php echo form_error('author'); ?>
                                       </div>
                                   </div>
 
@@ -168,7 +167,11 @@
                               <button type="submit" class="btn btn-success">Publish!</button>
                           </div>
                       </div>
-                      <?php echo validation_errors(); ?>
+                    <?php if($errors): ?>
+                    <div class="alert alert-danger">
+                        <?php echo $errors; ?>                                         
+                    </div>
+                    <?php endif; ?>
                   </form>
               </div>
 

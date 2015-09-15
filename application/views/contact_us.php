@@ -215,6 +215,12 @@
                                   <button type="submit" class="btn btn-default">Submit</button>
                               </div>
                           </div>
+
+                        <?php if($errors): ?>
+                        <div class="alert alert-danger">
+                            <?php echo $errors; ?>                                         
+                        </div>
+                        <?php endif; ?>
                       </form>
                                     
                                 </div>

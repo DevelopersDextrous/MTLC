@@ -9,11 +9,26 @@ class Email extends CI_Controller {
 	}
 
 	function index() {
-		$m['name'] = $_POST['name'];
-		$m['mail_id'] = $_POST['email'];
-		$m['subject'] = $_POST['subject'];
-		$m['message'] = $_POST['message'];
-		$m['receiver'] = 'shibz.islam@gmail.com';
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('name', 'Name' , 'required');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+		$this->form_validation->set_rules('subject', 'Subject', 'required');
+		$this->form_validation->set_rules('message', 'Messege', 'required');
+
+		if($this->form_validation->run() == FALSE) {
+			$data['errors'] = validation_errors();
+			$this->load->view('contact_us',$data);
+		}
+		else
+		{
+			$m['name'] = $_POST['name'];
+			$m['mail_id'] = $_POST['email'];
+			$m['subject'] = $_POST['subject'];
+			$m['message'] = $_POST['message'];
+			$m['receiver'] = 'shibz.islam@gmail.com';
+			$this->mail($m);
+		}
+		
 		// $fetch_mail = $this->register_model->getMail($id);
 
 		// 			foreach($fetch_mail as $mail) {
@@ -22,7 +37,7 @@ class Email extends CI_Controller {
 
 		//print_r($m);
 		//die();
-         $this->mail($m);
+         
     
 	}
 
