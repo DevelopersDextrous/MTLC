@@ -11,9 +11,9 @@ class Article extends CI_Controller {
 
 		$this->load->library('form_validation');
 		$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
-		$this->form_validation->set_rules('author', '', 'required');
-		$this->form_validation->set_rules('title', '', 'required');
-		$this->form_validation->set_rules('content', '', 'required');
+		$this->form_validation->set_rules('author', 'Author Name' , 'required');
+		$this->form_validation->set_rules('title', 'Title', 'required');
+		$this->form_validation->set_rules('content', 'Content', 'required');
 
 		if($this->form_validation->run() == FALSE) {
 			redirect('article');
@@ -28,15 +28,59 @@ class Article extends CI_Controller {
 				'date_published' => date("Y/m/d")
 				);
 
-
 			$this->load->model('article_model');
 			$p = $this->article_model->new_article($data);
 			if($p)
-		   		echo "success";
+			{
+				$this->article_list();
+			}		   		
 		   	else
 		   		echo "failure";
 		}
 
 		
 	}
+
+	public function article_list(){
+		$this->load->library('pagination');
+		$this->load->library('table');
+
+
+		$config['base_url'] = base_url().'index.php/article/article_list';
+		$config['total_rows'] = $this->db->get('article')->num_rows();
+		$config['per_page'] = 4;
+		$config['num_links'] = 5;
+
+		$this->pagination->initialize($config);
+
+		$data['records'] = $this->db->get('article',4, $this->uri->segment(3) );
+
+		// $this->load->model('article_model');
+		// $data['article'] = $this->article_model->get_article_list();
+		
+		$this->load->view('show_article_list', $data);
+
+	}
+
+	public function show_article(){
+		$aid = $_GET['id'];
+		$this->load->model('article_model');
+		$data['records'] = $this->article_model->get_article($aid);
+		$this->load->view('show_article', $data);
+
+	}
+
+
+	public function check_author_name($author){
+		if ($author == "")
+		{
+			$this->form_validation->set_message('check_author_name', 'This field is requird');
+			return FALSE;
+		}
+		else
+		{
+			return TRUE;
+		}
+	}
+
 }

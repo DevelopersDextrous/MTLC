@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create an Article</title>
+    <title>Article</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -15,7 +15,25 @@
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+<style type="text/css">
+.pagi_wrap a, .pagi_wrap strong{
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+.pagi_wrap strong, .pagi_wrap a:hover{
+  font-weight: normal;
+  background-color: #CCCCFF;
+}
 
+.pagi_wrap{
+  margin-bottom: 20px;
+
+}
+</style>
 </head>
 
 <body role="document" class="page">
@@ -121,71 +139,54 @@
 
             <div class="row no-gutter"><!-- row -->
 
-                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
+                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
 
                     <div class="col-padded"><!-- inner custom column -->
-
+                        
                         <div class="row gutter"><!-- row -->
 
                             <div class="col-lg-12 col-md-12">
-
-
-                                <h1 class="page-title">Create Article</h1>
+                                <h1 class="page-title">Articles</h1>
                                 
                                 <div class="news-body">
+                                 <?php foreach ($records->result() as $key): ?>                              
+                                <div class="list-group">
+                                  <a href="<?php echo base_url(); ?>index.php/article/show_article?id=<?php echo $key->id; ?>" class="list-group-item">
+                                    
+                                    <h3><?php echo $key->title; ?> <small> by <?php echo $key->author; ?></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
+                                    
+                                    <p class="list-group-item-text"><?php 
+                                        $string = $key->content;
+                                        $string = substr($string, 0,200).' ... ';
+                                        echo $string;
+                                     ?>
+                                 </p>
+                                  </a>
+                                
+                                </div>
+                                <?php endforeach; ?>
+                                </div>
+                            </div>
 
-                                  <form class="form-horizontal" method="post" action="article/publish">
-                                    <div class="form-group">
-                                        <label for="author" class="col-sm-2 control-label">Authors's Name</label>
-                                        <div class="col-sm-10">
-                                          <input type="text" class="form-control" id="author" name="author" placeholder="Name of the author...">
-                                          <?php echo form_error('author'); ?>
-                                      </div>
-                                  </div>
+                        </div><!-- row end -->
+                        
 
-                                  <div class="form-group">
-                                    <label for="title" class="col-sm-2 control-label">Title</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" class="form-control" id="title" name="title" placeholder="Title of the article">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="subtitle" class="col-sm-2 control-label">Subtitle</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="Subtitle of the article">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="content" class="col-sm-2 control-label">Content</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" id="content" rows="5" name="content" placeholder="Write something..."></textarea>
+                        <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="pagi_wrap">
+                                <?php echo $this->pagination->create_links(); ?>
                             </div>
                         </div>
+                    </div>
+                    </div><!-- inner custom column end -->
 
+                </div><!-- doc body wrapper end -->
 
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-success">Publish!</button>
-                          </div>
-                      </div>
-                      <?php echo validation_errors(); ?>
-                  </form>
-              </div>
+            </div><!-- sidebar wrapper end -->
 
-          </div>
+        </div><!-- row end -->
 
-      </div><!-- row end -->
-
-
-  </div><!-- inner custom column end -->
-
-</div><!-- doc body wrapper end -->
-
-</div><!-- sidebar wrapper end -->
-
-</div><!-- row end -->
-
-</div><!-- container end -->
+    </div><!-- container end -->
 
 </div><!-- content wrapper end -->
 
