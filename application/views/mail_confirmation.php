@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create New Admin</title>
+    <title>Contact Us</title>
     
-     <!-- Styles -->
+    <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
     <link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
     <link href="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
@@ -14,7 +14,15 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+
+    <style>
+    table {margin: 10px 0 10px 0;}
+        table tr td {width: 250px; text-align: center;}
+    .page-header{
+        margin-top: 15%;
+    }
+    </style>   
 
   </head>
   
@@ -117,31 +125,6 @@
     <div id="k-body"><!-- content wrapper -->
     
         <div class="container"><!-- container -->
-        
-            <div class="row"><!-- row -->
-            
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
             
             <div class="row no-gutter"><!-- row -->
                 
@@ -154,64 +137,51 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Create New Admin</h1>
+                                <h1 class="page-title">Mail sent</h1>
                                 
                                 <div class="news-body">
-                                
-                                    <form action="<?php echo base_url(); ?>index.php/admin/confirm_new_admin" method="post" class="form-horizontal">
-                                        <div class="form-group">
-                                          <label for="first_name" class="col-sm-2 control-label">First Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name">
-                                          </div>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                          <label for="last_name" class="col-sm-2 control-label">Last Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name">
-                                          </div>
-                                        </div>
-                                        
-
-                                        <div class="form-group">
-                                          <label for="user_name" class="col-sm-2 control-label">User Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="user_name" class="form-control" id="user_name" placeholder="User Name">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="email" class="col-sm-2 control-label">Email:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="email" class="form-control" id="email" placeholder="Email">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="password" class="col-sm-2 control-label">Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="confirm_password" class="col-sm-2 control-label">Confirm Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="Confirm Password">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-10">
-
-                                                <input type="submit" class="btn btn-large btn-success" value="Confirm">
-                                                <a href="#" class="btn btn-large btn-info">Cancel</a>
-                                            </div>
-                                        </div>
+                                    <p class="call-out">Thank you for taking out time to reach to us. We will try to get back to you as soon as possible...</p>
                                     
                                     
-                                    </form>
+                                    <div class="page-header">
+                                        <h3>Send Another Message</h3>
+                                        </div>
+
+                                        <form class="form-horizontal" method="post" action="<?php echo base_url(); ?>index.php/email">
+                                        <div class="form-group">
+                                        <label for="name" class="col-sm-2 control-label">Name</label>
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control" id="name" name="name" placeholder="Your name...">
+                                      </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="subject" class="col-sm-2 control-label">Subject</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                    <label for="messege" class="col-sm-2 control-label">Messege</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="messege" rows="5" name="message" placeholder="Write something for us..."></textarea>
+                                  </div>
+                              </div>
+
+                              
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                              </div>
+                          </div>
+                      </form>
+                                      
+                                    
                                 </div>
                             
                             </div>
@@ -255,8 +225,8 @@
     
     </div><!-- content wrapper end -->
     
-    <?php include 'include/footer.php' ?>
-
+    
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>

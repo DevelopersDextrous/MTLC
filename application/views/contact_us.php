@@ -183,7 +183,7 @@
                                         <h3>Send Message</h3>
                                         </div>
 
-                                        <form class="form-horizontal" method="post" action="">
+                                        <form class="form-horizontal" method="post" action="<?php echo base_url(); ?>index.php/email">
                                         <div class="form-group">
                                         <label for="name" class="col-sm-2 control-label">Name</label>
                                         <div class="col-sm-10">
@@ -205,7 +205,7 @@
                               <div class="form-group">
                                     <label for="messege" class="col-sm-2 control-label">Messege</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="messege" rows="5" name="messege" placeholder="Write something for us..."></textarea>
+                                        <textarea class="form-control" id="messege" rows="5" name="message" placeholder="Write something for us..."></textarea>
                                   </div>
                               </div>
 
