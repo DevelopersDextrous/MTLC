@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create an Article</title>
+    <title>Article</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -129,63 +129,31 @@
 
                             <div class="col-lg-12 col-md-12">
 
+                                <?php foreach ($records as $key): ?>
+                                <h1 class="page-title"><?php echo $key->title; ?>
+                                    <small><?php echo $key->subtitle; ?></small>
+                                    <span id="helpBlock" class="help-block"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Published on <?php echo $key->date_published; ?> |<span class="glyphicon glyphicon-user" aria-hidden="true"></span> By <?php echo $key->author; ?></span>
+                                </h1>
 
-                                <h1 class="page-title">Create Article</h1>
                                 
                                 <div class="news-body">
-
-                                  <form class="form-horizontal" method="post" action="article/publish">
-                                    <div class="form-group">
-                                        <label for="author" class="col-sm-2 control-label">Authors's Name</label>
-                                        <div class="col-sm-10">
-                                          <input type="text" class="form-control" id="author" name="author" placeholder="Name of the author...">
-                                          <?php echo form_error('author'); ?>
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label for="title" class="col-sm-2 control-label">Title</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" class="form-control" id="title" name="title" placeholder="Title of the article">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="subtitle" class="col-sm-2 control-label">Subtitle</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="Subtitle of the article">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="content" class="col-sm-2 control-label">Content</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" id="content" rows="5" name="content" placeholder="Write something..."></textarea>
+                                    <?php echo $key->content; ?>
+                                </div>
+                            <?php endforeach; ?>
                             </div>
-                        </div>
+
+                        </div><!-- row end -->
 
 
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-success">Publish!</button>
-                          </div>
-                      </div>
-                      <?php echo validation_errors(); ?>
-                  </form>
-              </div>
+                    </div><!-- inner custom column end -->
 
-          </div>
+                </div><!-- doc body wrapper end -->
 
-      </div><!-- row end -->
+            </div><!-- sidebar wrapper end -->
 
+        </div><!-- row end -->
 
-  </div><!-- inner custom column end -->
-
-</div><!-- doc body wrapper end -->
-
-</div><!-- sidebar wrapper end -->
-
-</div><!-- row end -->
-
-</div><!-- container end -->
+    </div><!-- container end -->
 
 </div><!-- content wrapper end -->
 
