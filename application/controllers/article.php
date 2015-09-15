@@ -52,13 +52,28 @@ class Article extends CI_Controller {
 		$config['num_links'] = 5;
 
 		$this->pagination->initialize($config);
-
+		$this->db->order_by("id", "desc"); 
 		$data['records'] = $this->db->get('article',4, $this->uri->segment(3) );
-
-		// $this->load->model('article_model');
-		// $data['article'] = $this->article_model->get_article_list();
 		
 		$this->load->view('show_article_list', $data);
+
+	}
+
+	public function article_list_delete(){
+		$this->load->library('pagination');
+		$this->load->library('table');
+
+
+		$config['base_url'] = base_url().'index.php/article/article_list_delete';
+		$config['total_rows'] = $this->db->get('article')->num_rows();
+		$config['per_page'] = 4;
+		$config['num_links'] = 5;
+
+		$this->pagination->initialize($config);
+
+		$data['records'] = $this->db->get('article',4, $this->uri->segment(3) );
+		
+		$this->load->view('show_article_list_for_delete', $data);
 
 	}
 
@@ -67,6 +82,14 @@ class Article extends CI_Controller {
 		$this->load->model('article_model');
 		$data['records'] = $this->article_model->get_article($aid);
 		$this->load->view('show_article', $data);
+
+	}
+
+	public function delete_article(){
+		$aid = $_GET['id'];
+		$this->load->model('article_model');
+		$this->article_model->delete_article($aid);
+		$this->article_list_delete();
 
 	}
 

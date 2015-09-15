@@ -57,5 +57,13 @@ class Article_model extends CI_Model {
 			return $data;
 		}
 	}
+
+	public function delete_article($aid) {
+		$q = $this->db->delete('article', array('id' => $aid));
+
+		if($q){
+			return true;
+		}
+	}
 }
  ?>

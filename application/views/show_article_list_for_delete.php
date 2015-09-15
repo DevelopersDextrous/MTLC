@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Home</title>
+    <title>Article</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -15,39 +15,52 @@
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link href="<?php echo base_url(); ?>css/modal.css" rel="stylesheet"  type="text/css">
+<style type="text/css">
+.pagi_wrap a, .pagi_wrap strong{
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+.pagi_wrap strong, .pagi_wrap a:hover{
+  font-weight: normal;
+  background-color: #CCCCFF;
+}
 
-    <style>
-    table {margin: 10px 0 10px 0;}
-        table tr td {width: 250px; text-align: center;}
-    
-    </style>   
+.pagi_wrap{
+  margin-bottom: 20px;
 
-  </head>
-  
-  <body role="document" class="page">
-  
+}
+</style>
+</head>
+
+<body role="document" class="page">
+
     <!-- device test, don't remove. javascript needed! -->
     <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span>
     <!-- device test end -->
     
     <div id="k-head" class="container"><!-- container + head wrapper -->
-    
+
         <div class="row"><!-- row -->
-        
+
             <nav class="k-functional-navig"><!-- functional navig -->
-        
+
                 <ul class="list-inline pull-right">
                     <li><a href="#">Jobs</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Directions</a></li>
                 </ul>
-        
+
             </nav><!-- functional navig end -->
-        
+
             <div class="col-lg-12">
-        
+
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
-                
+
                     <h1 class="k-logo">
                         <a href="index.html" title="Home Page">
                             <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
@@ -55,11 +68,11 @@
                     </h1>
                     
                     <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"></span></a><!-- alternative menu button -->
-            
+
                 </div><!-- site logo end -->
 
                 <nav id="k-menu" class="k-main-navig"><!-- main navig -->
-        
+
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
                             <a href="news.html" title="Our School News">News</a>
@@ -111,131 +124,128 @@
                             <a href="contact-us.html" title="School Contacts">Contact Us</a>
                         </li>
                     </ul>
-        
+
                 </nav><!-- main navig end -->
-            
+
             </div>
             
         </div><!-- row end -->
-    
+
     </div><!-- container + head wrapper end -->
     
     <div id="k-body"><!-- content wrapper -->
-    
+
         <div class="container"><!-- container -->
-            
+
+
             <div class="row no-gutter"><!-- row -->
-                
-                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
-                    
+
+                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
+
                     <div class="col-padded"><!-- inner custom column -->
-                    
-                        <div class="row gutter"><!-- row -->
                         
+                        <div class="row gutter"><!-- row -->
+
                             <div class="col-lg-12 col-md-12">
-                    
-                                
-                                <h1 class="page-title">Welcome Admin</h1>
+                                <h1 class="page-title">Articles</h1>
                                 
                                 <div class="news-body">
+                                 
+                                 <table class="table table-hover">
+                                    <?php foreach ($records->result() as $key): ?>    
+                                    <tr>
+                                        <td>
+                                            <h3><?php echo $key->title; ?> <small> by <?php echo $key->author; ?></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
                                     
+                                    <p class="list-group-item-text"><?php 
+                                        $string = $key->content;
+                                        $string = substr($string, 0,200).' ... ';
+                                        echo $string;
+                                     ?>
+                                    </p>
+                                        </td>
+                                        <td><div class=""><a type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" href="#confirm<?php echo $key->id; ?>">
+                                         <span class="glyphicon glyphicon-remove"></span>
+                                             </a> 
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                 </table>                          
                                 
-                                    <table class="table">
-                                    
-                                        
-                                        
-                                        <tr>
-                                            <td><b>Admin:</b></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/admin/create_new" class="btn btn-success">Create New</a></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/admin/load_admin_list" class="btn btn-danger">Delete</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td> <b>Article</b> </td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/article" class="btn btn-success">Create New</a></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/article/article_list_delete" class="btn btn-danger">Delete</a></td>
-                                        </tr>
-
-                                    </table>
-
-                                    
-
-
-                                    
-                                    
+                                
                                 </div>
-                            
                             </div>
-                        
+
                         </div><!-- row end -->
-                                
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- doc body wrapper end -->
-                
-                <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
-                    
-                    <div class="col-padded col-shaded"><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
                         
-                            <li class="widget-container widget_nav_menu"><!-- widget -->
-                    
-                                <h1 class="title-widget">Select</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">News Archive</a></li>
-                                    <li><a href="#" title="menu item">Tradition of School Events</a></li>
-                                    <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
-                                    <li><a href="#" title="menu item">Trends and Tips</a></li>
-                                    <li><a href="#" title="menu item">Events Poll</a></li>
-                                </ul>
-                    
-                            </li>
-                            
-                            
-                    
+
+                        <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="pagi_wrap">
+                                <?php echo $this->pagination->create_links(); ?>
+                            </div>
+                        </div>
+                    </div>
                     </div><!-- inner custom column end -->
-                    
-                </div><!-- sidebar wrapper end -->
-            
-            </div><!-- row end -->
-        
-        </div><!-- container end -->
-    
-    </div><!-- content wrapper end -->
-    
-    
-    <?php include 'include/footer.php';?>
-    <!-- jQuery -->
-    <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
-    <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
-    
-    <!-- Bootstrap -->
-    <script src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
-    
-    <!-- Drop-down -->
-    <script src="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.js"></script>
-    
-    <!-- Fancybox -->
-    <script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox-media.js"></script><!-- Fancybox media -->
-    
-    <!-- Responsive videos -->
-    <script src="<?php echo base_url(); ?>js/jquery.fitvids.js"></script>
-    
-    <!-- Audio player -->
-    <script src="<?php echo base_url(); ?>js/audioplayer/audioplayer.min.js"></script>
-    
-    <!-- Pie charts -->
-    <script src="<?php echo base_url(); ?>js/jquery.easy-pie-chart.js"></script>
-    
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-    
-    <!-- Theme -->
-    <script src="<?php echo base_url(); ?>js/theme.js"></script>
-    
-  </body>
+
+                </div><!-- doc body wrapper end -->
+
+            </div><!-- sidebar wrapper end -->
+
+        </div><!-- row end -->
+
+    </div><!-- container end -->
+
+</div><!-- content wrapper end -->
+
+ <?php foreach ($records->result() as $key): ?>
+    <div class="modal fade dark" id="confirm<?php echo $key->id; ?>" tabindex="" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">               
+                <header class="modal-header">
+                    <h4><strong>Are you Sure you want to Delete this Article?</strong></h4>
+                 </header>
+                <footer class="modal-footer">
+                    <a href="<?php echo base_url(); ?>index.php/article/delete_article?id=<?php echo $key->id; ?>" class="btn btn-primary" id="">Yes</a>
+                    <a href="" class="btn btn-primary" data-dismiss="modal" id="">No</a>
+                </footer> 
+              
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <?php endforeach; ?>
+
+
+<?php include 'include/footer.php';?>
+<!-- jQuery -->
+<script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
+<script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Drop-down -->
+<script src="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.js"></script>
+
+<!-- Fancybox -->
+<script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="<?php echo base_url(); ?>js/fancybox/jquery.fancybox-media.js"></script><!-- Fancybox media -->
+
+<!-- Responsive videos -->
+<script src="<?php echo base_url(); ?>js/jquery.fitvids.js"></script>
+
+<!-- Audio player -->
+<script src="<?php echo base_url(); ?>js/audioplayer/audioplayer.min.js"></script>
+
+<!-- Pie charts -->
+<script src="<?php echo base_url(); ?>js/jquery.easy-pie-chart.js"></script>
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+<!-- Theme -->
+<script src="<?php echo base_url(); ?>js/theme.js"></script>
+
+</body>
 </html>
