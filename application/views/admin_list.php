@@ -138,11 +138,26 @@
                                 <h1 class="page-title">Welcome Admin</h1>
                                 
                                 <div class="news-body">
-                                    <?php foreach ($d as $key) {
-                                        if($key == 'N/A')
+                                    <?php 
+                                    
+                                       
+                                    
+                                    foreach ($result as $key): 
+                                        if($stat == 1) {
                                             ?>
-                                        <h4>You are the only admin, no other data exists to be deleted!</h4>
-                                    <?php else { ?>
+                                        
+                                        <table class="table">
+                                            <th>Name</th>
+                                        <th>Email</th>
+                                        <th></th>
+                                        
+                                        <tr>
+                                            <td><?php echo $key->first_name." ".$key->last_name; ?></td>
+                                            <td><?php echo $key->email; ?></td>
+                                            <td>You are the only admin, data cannot be deleted!</td>
+                                        </tr>
+                                        </table>
+                                    <?php } else if ($stat == 0) { ?>
 
                                    
                                 
@@ -163,7 +178,8 @@
                                     </table>
 
                                     <?php } 
-                                    } ?>
+                                    
+                                    endforeach; ?>
 
 
                                     

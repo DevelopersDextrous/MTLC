@@ -53,18 +53,35 @@ class Login_model extends CI_Model {
 	}
 
 	public function get_admin(){
-		$q = $this->db->query('SELECT * FROM admin');
+		$q = $this->db->query('SELECT id, first_name, last_name, email FROM admin');
 
 		if($q->num_rows() > 0)
 		{
-			foreach ($q as $row) {
+			foreach ($q->result() as $row) {
 				$data [] = $row;
 			}
 			return $data;
 		}
+	}
 
-		else if($q->num_rows() == 1) {
-			return 'N/A';
+	public function get_count(){
+		$q = $this->db->query('SELECT id FROM admin');
+
+		if($q->num_rows() == 1) {
+		
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+
+	public function delete_admin($id) {
+		//$q = $this->db->query("DELETE * FROM admin WHERE id = $id");
+		$q = $this->db->delete('admin', array('id' => $id));
+
+		if($q){
+			return true;
 		}
 	}
 }

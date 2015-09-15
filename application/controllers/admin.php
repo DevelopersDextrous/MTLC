@@ -64,8 +64,29 @@ class Admin extends CI_Controller {
 	public function load_admin_list()
 	{
 		$this->load->model('login_model');
-		$d = $this->login_model->get_admin();
+		$d['result'] = $this->login_model->get_admin();
+		$count = $this->login_model->get_count();
+
+		if($count == 1) {
+			$d['stat'] = 1;
+		}
+		else {
+			$d['stat'] = 0;	
+		}
+
 
 		$this->load->view('admin_list', $d);
+	}
+
+	public function delete_admin(){
+		$id = $_GET['id'];
+
+		$this->load->model('login_model');
+
+		$d = $this->login_model->delete_admin($id);
+
+		if($d) {
+			$this->load_admin_list();
+		}
 	}
 }
