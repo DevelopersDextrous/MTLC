@@ -28,15 +28,7 @@
     
         <div class="row"><!-- row -->
         
-            <nav class="k-functional-navig"><!-- functional navig -->
-        
-                <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
-                </ul>
-        
-            </nav><!-- functional navig end -->
+            <?php include 'include/top_right.php' ?>
         
             <div class="col-lg-12">
         
@@ -169,7 +161,7 @@
                                     
 
                                     <p style="margin-top:10px;">
-                                        <a href="contact_us.html">Contact us</a> today for an appointment and expert advice to aid your situation.
+                                        <a href="<?php echo base_url(); ?>index.php/service/contact_us">Contact us</a> today for an appointment and expert advice to aid your situation.
                                     </p>
                                     
                                 </div>
@@ -183,31 +175,7 @@
                     
                 </div><!-- doc body wrapper end -->
                 
-                <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
-                    
-                    <div class="col-padded col-shaded"><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                            <li class="widget-container widget_nav_menu"><!-- widget -->
-                    
-                                <h1 class="title-widget">Select</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">News Archive</a></li>
-                                    <li><a href="#" title="menu item">Tradition of School Events</a></li>
-                                    <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
-                                    <li><a href="#" title="menu item">Trends and Tips</a></li>
-                                    <li><a href="#" title="menu item">Events Poll</a></li>
-                                </ul>
-                    
-                            </li>
-                            
-                            
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- sidebar wrapper end -->
+                <?php include 'include/side_bar.php' ?>
             
             </div><!-- row end -->
         
@@ -217,6 +185,7 @@
     
     
     <?php include 'include/footer.php' ?>
+    <?php include 'include/modal.php' ?>
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>

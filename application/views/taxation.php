@@ -28,15 +28,7 @@
 
         <div class="row"><!-- row -->
 
-            <nav class="k-functional-navig"><!-- functional navig -->
-
-                <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
-                </ul>
-
-            </nav><!-- functional navig end -->
+            <?php include 'include/top_right.php' ?>
 
             <div class="col-lg-12">
 
@@ -117,31 +109,6 @@
     <div id="k-body"><!-- content wrapper -->
 
         <div class="container"><!-- container -->
-
-            <div class="row"><!-- row -->
-
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-
-                </div><!-- top search end -->
-
-                <div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->               
-                
-            </div><!-- row end -->
             
             <div class="row no-gutter"><!-- row -->
 
@@ -189,107 +156,7 @@
                     
                 </div><!-- doc body wrapper end -->
                 
-                <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
-
-                    <div class="col-padded col-shaded"><!-- inner custom column -->
-
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-
-                            <li class="widget-container widget_nav_menu"><!-- widget -->
-
-                                <h1 class="title-widget">Select</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">News Archive</a></li>
-                                    <li><a href="#" title="menu item">Tradition of School Events</a></li>
-                                    <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
-                                    <li><a href="#" title="menu item">Trends and Tips</a></li>
-                                    <li><a href="#" title="menu item">Events Poll</a></li>
-                                </ul>
-
-                            </li>
-                            
-                            <li class="widget-container widget_recent_news"><!-- widgets list -->
-
-                                <h1 class="title-widget">School News</h1>
-                                
-                                <ul class="list-unstyled">
-
-                                    <li class="recent-news-wrap news-no-summary">
-
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title="Megan Boyle flourishes..."><img src="img/recent-news-thumb-1.jpg" class="attachment-thumbnail wp-post-image" alt="Thumbnail 1" /></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <div class="recent-news-meta">
-                                                    <div class="recent-news-date">Jun 12, 2014</div>
-                                                </div>
-                                                <h1 class="title-median"><a href="#" title="Megan Boyle flourishes...">Megan Boyle flourishes at Boston University</a></h1>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    
-                                    <li class="recent-news-wrap news-no-summary">
-
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title="Buntington Alum..."><img src="img/recent-news-thumb-2.jpg" class="attachment-thumbnail wp-post-image" alt="Thumbnail 2" /></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <div class="recent-news-meta">
-                                                    <div class="recent-news-date">Jun 10, 2014</div>
-                                                </div>
-                                                <h1 class="title-median"><a href="#" title="Buntington Alum...">Buntington Alum Marc Bloom Pens New Book</a></h1>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    
-                                    <li class="recent-news-wrap news-no-summary">
-
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title="Cody Rotschild Enjoys..."><img src="img/recent-news-thumb-3.jpg" class="attachment-thumbnail wp-post-image" alt="Thumbnail 3" /></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <div class="recent-news-meta">
-                                                    <div class="recent-news-date">Jun 05, 2014</div>
-                                                </div>
-                                                <h1 class="title-median"><a href="#" title="Cody Rotschild Enjoys...">Cody Rotschild Enjoys Life in Montreal</a></h1>
-                                            </div>
-                                        </div>
-
-                                    </li>
-
-                                </ul>
-                                
-                            </li><!-- widgets list end -->
-                            
-                            <li class="widget-container widget_sofa_twitter"><!-- widget -->
-
-                                <ul class="k-twitter-twitts list-unstyled">
-
-                                    <li class="twitter-twitt">
-                                        <p>
-                                            <a href="https://twitter.com/DanielleFilson">@MattDeamon</a> Why it always has to be so complicated? Try to get it via this link <a href="http://usap.co/potter">mama.co/hpot</a> Good luck mate!
-                                        </p>
-                                    </li>
-
-                                </ul>
-                                
-                                <div class="k-twitter-twitts-footer">
-                                    <a href="#" class="k-twitter-twitts-follow" title="Follow!"><i class="fa fa-twitter"></i>&nbsp; Follow us!</a>
-                                </div>
-
-                            </li><!-- widget end -->
-                            
-                        </ul><!-- widgets end -->
-
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- sidebar wrapper end -->
+              <?php include 'include/side_bar.php' ?>
 
             </div><!-- row end -->
 
@@ -298,6 +165,7 @@
     </div><!-- content wrapper end -->
     
     <?php include 'include/footer.php' ?>
+    <?php include 'include/modal.php' ?>
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
