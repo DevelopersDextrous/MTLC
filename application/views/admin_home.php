@@ -126,9 +126,9 @@
     
         <div class="container"><!-- container -->
             
-            <div class="row no-gutter"><!-- row -->
+            <div class="row no-gutter" style="margin: 50px 0 80px 0;"><!-- row -->
                 
-                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
+                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
                     
                     <div class="col-padded"><!-- inner custom column -->
                     
@@ -148,21 +148,23 @@
                                         
                                         <tr>
                                             <td><b>Admin:</b></td>
+                                            <td></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/admin/create_new" class="btn btn-success">Create New</a></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/admin/load_admin_list" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                         <tr>
                                             <td> <b>Article</b> </td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/article/article_list" class="btn btn-warning">View</a></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/article" class="btn btn-success">Create New</a></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/article/article_list_delete" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                         <tr>
                                             <td><b>Directors</b></td>
-                                            <td></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/article" class="btn btn-success">Create New</a></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/article/article_list_delete" class="btn btn-danger">Delete</a></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/director" class="btn btn-warning">View</a></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/director/create_new" class="btn btn-success">Create New</a></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/article/load_director_list" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                     </table>
@@ -183,31 +185,7 @@
                     
                 </div><!-- doc body wrapper end -->
                 
-                <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
-                    
-                    <div class="col-padded col-shaded"><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                            <li class="widget-container widget_nav_menu"><!-- widget -->
-                    
-                                <h1 class="title-widget">Select</h1>
-                                
-                                <ul>
-                                    <li><a href="#" title="menu item">News Archive</a></li>
-                                    <li><a href="#" title="menu item">Tradition of School Events</a></li>
-                                    <li><a href="#" title="menu item">Report Asocial Behaviour</a></li>
-                                    <li><a href="#" title="menu item">Trends and Tips</a></li>
-                                    <li><a href="#" title="menu item">Events Poll</a></li>
-                                </ul>
-                    
-                            </li>
-                            
-                            
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- sidebar wrapper end -->
+                
             
             </div><!-- row end -->
         
