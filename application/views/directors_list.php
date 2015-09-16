@@ -51,11 +51,7 @@
 
         <div class="row"><!-- row -->
 
-            <nav class="k-functional-navig"><!-- functional navig -->
-
                 <?php include 'include/top_right.php'; ?>
-
-            </nav><!-- functional navig end -->
 
             <div class="col-lg-12">
 
@@ -138,7 +134,7 @@
         <div class="container"><!-- container -->
 
 
-            <div class="row no-gutter" style="margin-top: 30px;"><!-- row -->
+            <div class="row no-gutter"><!-- row -->
 
                 <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
 
@@ -191,6 +187,7 @@
 
 
 <?php include 'include/footer.php';?>
+<?php include 'include/modal.php'; ?>
 <!-- jQuery -->
 <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
 <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>

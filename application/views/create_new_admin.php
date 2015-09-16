@@ -32,14 +32,7 @@
     
         <div class="row"><!-- row -->
         
-            <nav class="k-functional-navig"><!-- functional navig -->
-        
-                <ul class="list-inline pull-right">
-                    <li><a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a></li>
-                </ul>
-        
-            </nav><!-- functional navig end -->
-        
+           <?php include 'include/top_right.php' ?>
             <div class="col-lg-12">
         
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
@@ -206,8 +199,6 @@
                     </div><!-- inner custom column end -->
                     
                 </div><!-- doc body wrapper end -->
-                
-               
             
             </div><!-- row end -->
         
@@ -216,6 +207,7 @@
     </div><!-- content wrapper end -->
     
     <?php include 'include/footer.php' ?>
+    <?php include 'include/modal.php' ?>
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
