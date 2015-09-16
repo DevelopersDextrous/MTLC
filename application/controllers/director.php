@@ -3,6 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Director extends CI_Controller {
 
+	public function index(){
+		$this->director_list();
+	}
+
 	public function director_list(){
 		$this->load->library('pagination');
 		$this->load->library('table');

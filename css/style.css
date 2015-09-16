@@ -161,7 +161,7 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 #navigation-mobile li a { display: block; }
 #navigation-mobile li a:link, #navigation-mobile li a:visited { color: #636363; }
 #navigation-mobile li a:hover, #navigation-mobile li a:focus { color: #ea5644; }
-#menu_1 > a:hover {color: #EA5644;}
+#menu_1 > a:hover {color: #ea5644;}
 #menu_2 > a:hover {color: #FFF860;}
 
 
