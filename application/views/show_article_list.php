@@ -125,7 +125,7 @@
 
             <div class="row no-gutter"><!-- row -->
 
-                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
+                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
 
                     <div class="col-padded"><!-- inner custom column -->
                         
@@ -138,14 +138,14 @@
                             <?php } ?>
 
                             <div class="col-lg-12 col-md-12">
-                                <h1 class="page-title text-warning">Articles</h1>
+                                <h1 class="page-title text-danger"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Articles</h1>
                                 
                                 <div class="news-body">
                                  <?php foreach ($records->result() as $key): ?>                              
                                 <div class="list-group">
                                   <a href="<?php echo base_url(); ?>index.php/article/show_article?id=<?php echo $key->id; ?>" class="list-group-item">
                                     
-                                    <h3 class="text-primary"><?php echo $key->title; ?> <small> <b>by <?php echo $key->author; ?></b></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
+                                    <h3><?php echo $key->title; ?> <small> <b>by <?php echo $key->author; ?></b></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
                                     
                                     <p class="list-group-item-text text-muted"><?php 
                                         $string = $key->content;
@@ -174,7 +174,7 @@
 
                 </div><!-- doc body wrapper end -->
 
-            </div><!-- sidebar wrapper end -->
+            <?php include 'include/side_bar.php' ?>
 
         </div><!-- row end -->
 

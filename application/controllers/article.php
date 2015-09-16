@@ -68,6 +68,11 @@ class Article extends CI_Controller {
 		$this->pagination->initialize($config);
 		$this->db->order_by("id", "desc"); 
 		$data['records'] = $this->db->get('article',4, $this->uri->segment(3) );
+
+		$this->load->model('article_model');
+		$data['article_count'] = $this->article_model->get_total_articles();
+		$this->load->model('director_model');
+		$data['director_count'] = $this->director_model->get_total_directors();
 		
 		$this->load->view('show_article_list', $data);
 
@@ -87,7 +92,7 @@ class Article extends CI_Controller {
 			$config['num_links'] = 5;
 
 			$this->pagination->initialize($config);
-
+			$this->db->order_by("id", "desc"); 
 			$data['records'] = $this->db->get('article',4, $this->uri->segment(3) );
 			
 			$this->load->view('show_article_list_for_delete', $data);

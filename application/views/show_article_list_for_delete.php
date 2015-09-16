@@ -141,7 +141,7 @@
                                 </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <h1 class="page-title">Articles</h1>
+                                <h1 class="page-title text-danger"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Articles</h1>
                                 
                                 <div class="news-body">
                                  

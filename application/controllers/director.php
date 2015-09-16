@@ -20,6 +20,11 @@ class Director extends CI_Controller {
 		$this->pagination->initialize($config);
 		 
 		$data['records'] = $this->db->get('directors',5, $this->uri->segment(3) );
+
+		$this->load->model('article_model');
+		$data['article_count'] = $this->article_model->get_total_articles();
+		$this->load->model('director_model');
+		$data['director_count'] = $this->director_model->get_total_directors();
 		
 		$this->load->view('directors_list', $data);
 	}

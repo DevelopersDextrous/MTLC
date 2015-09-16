@@ -129,7 +129,7 @@
 
             <div class="row no-gutter"><!-- row -->
 
-                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
+                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
 
                     <div class="col-padded"><!-- inner custom column -->
                         
@@ -140,7 +140,7 @@
                                 </div> 
                             <?php } ?>
                             <div class="col-lg-12 col-md-12">
-                                <h1 class="page-title">Directors</h1>
+                                <h1 class="page-title text-primary"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Directors</h1>
                                 
                                 <div class="news-body">
                                  <?php foreach ($records->result() as $key): ?>                              
@@ -173,7 +173,7 @@
 
                 </div><!-- doc body wrapper end -->
 
-            </div><!-- sidebar wrapper end -->
+            <?php include 'include/side_bar.php' ?>
 
         </div><!-- row end -->
 
