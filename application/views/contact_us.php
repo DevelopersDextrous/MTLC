@@ -139,7 +139,7 @@
                                         
                                         
                                         <tr>
-                                            <td><b>Postal Address:</b></td>
+                                            <td><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span><b> Postal Address:</b></td>
                                             <td>23/d/1 Free School Street, <br> Box Culvert Road, <br> Panthapath, Dhaka-1205</td>
                                         </tr>
                                     </table>
@@ -149,12 +149,12 @@
                                         
                                         
                                         <tr>
-                                            <td><b>Phone:</b></td>
+                                            <td><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span><b> Phone:</b></td>
                                             <td>+88 01917272316</td>
                                         </tr>
 
                                         <tr>
-                                            <td> <b>Fax:</b> </td>
+                                            <td><span class="glyphicon glyphicon-print" aria-hidden="true"> </span> <b> Fax:</b> </td>
                                             <td>+88 01741126758</td>
                                         </tr>
                                     </table>
@@ -164,7 +164,7 @@
                                         
                                         
                                         <tr>
-                                            <td><b>Address:</b></td>
+                                            <td><span class="glyphicon glyphicon-send" aria-hidden="true"> </span> <b> Address:</b></td>
                                             <td>akperd@yahoo.com</td>
                                         </tr>
 
