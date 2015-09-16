@@ -15,6 +15,7 @@
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link href="<?php echo base_url(); ?>css/back.css" rel="stylesheet" type="text/css">
 
     <style>
     table {margin: 10px 0 10px 0;}

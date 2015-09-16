@@ -15,6 +15,7 @@
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link href="<?php echo base_url(); ?>css/back.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -108,7 +109,7 @@
     <div id="k-body"><!-- content wrapper -->
 
         <div class="container"><!-- container -->
-
+        
 
             <div class="row no-gutter"><!-- row -->
 
@@ -143,8 +144,17 @@
            <?php include 'include/side_bar.php' ?>
 
         </div><!-- row end -->
+                
+            
 
     </div><!-- container end -->
+    <div id="bk">
+        <?php if($this->session->userdata('is_logged_in') == true){?>
+                                <div class="pull-left back">
+                                    <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info"><span class="glyphicon glyphicon-menu-left" aria-hidden=""></span> Back to Admin Home</a>
+                                </div> 
+                            <?php } ?>
+    </div>
 
 </div><!-- content wrapper end -->
 

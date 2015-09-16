@@ -1,3 +1,5 @@
+<?php if($this->session->userdata('is_logged_in') != true): ?>
+
 <div id="k-sidebar" class="col-lg-4 col-md-4"><!-- sidebar wrapper -->
 
     <div class="col-padded col-shaded"><!-- inner custom column -->
@@ -26,3 +28,4 @@
     </div><!-- inner custom column end -->
 
 </div><!-- sidebar wrapper end -->
+<?php endif; ?>
