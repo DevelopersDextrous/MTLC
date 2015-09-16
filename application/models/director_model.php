@@ -17,4 +17,13 @@ class Director_model extends CI_Model {
 		else
 			return false;
 	}
+
+	public function delete_director($id) {
+		//$q = $this->db->query("DELETE * FROM admin WHERE id = $id");
+		$q = $this->db->delete('directors', array('id' => $id));
+
+		if($q){
+			return true;
+		}
+	}
 }

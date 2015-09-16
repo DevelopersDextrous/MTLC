@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Home</title>
+    <title>Delete Director</title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -21,6 +21,24 @@
         table tr td {width: 250px; }
 
         .pull-right li {list-style: none;}
+
+        .pagi_wrap a, .pagi_wrap strong{
+          padding: 6px 12px;
+          margin-left: -1px;
+          line-height: 1.428571429;
+          text-decoration: none;
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+        }
+        .pagi_wrap strong, .pagi_wrap a:hover{
+          font-weight: normal;
+          background-color: #CCCCFF;
+        }
+
+        .pagi_wrap{
+          margin-bottom: 20px;
+
+        }
     
     </style>   
 
@@ -142,45 +160,30 @@
                                     
                                        
                                     
-                                    foreach ($result as $key): 
-                                        if($stat == 1) {
-                                            ?>
+                                    foreach ($records->result() as $key): ?>
                                         
-                                        <table class="table">
-                                            <th>Name</th>
-                                        <th>Email</th>
-                                        <th></th>
-                                        
-                                        <tr>
-                                            <td><?php echo $key->first_name." ".$key->last_name; ?></td>
-                                            <td><?php echo $key->email; ?></td>
-                                            <td>You are the only admin, data cannot be deleted!</td>
-                                        </tr>
-                                        </table>
-                                    <?php } else if ($stat == 0) { ?>
 
                                    
                                 
                                     <table class="table">
                                     
                                         <th>Name</th>
-                                        <th>Email</th>
+                                        <th>Designation</th>
                                         <th></th>
                                         
                                         <tr>
-                                            <td><?php echo $key->first_name." ".$key->last_name; ?></td>
-                                            <td><?php echo $key->email; ?></td>
-                                            <td><?php if($key->id != $this->session->userdata('user_id')){ ?>
-                                            <a href="<?php echo base_url(); ?>index.php/admin/delete_admin?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a>
+                                            <td><?php echo $key->name; ?></td>
+                                            <td><?php echo $key->designation; ?></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/director/delete_director?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a>
 
-                                              <?php  } ?></td>
+                                              </td>
                                         </tr>
 
                                         
 
                                     </table>
 
-                                    <?php } 
+                                    <?php 
                                     
                                     endforeach; ?>
 
@@ -192,6 +195,13 @@
                             </div>
                         
                         </div><!-- row end -->
+                        <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="pagi_wrap">
+                                <?php echo $this->pagination->create_links(); ?>
+                            </div>
+                        </div>
+                    </div>
                                 
                     
                     </div><!-- inner custom column end -->
