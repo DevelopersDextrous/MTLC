@@ -133,7 +133,7 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Create New Admin</h1>
+                                <h1 class="page-title">Create New Director</h1>
                                 
                                 <div class="news-body">
                                 

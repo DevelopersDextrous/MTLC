@@ -20,6 +20,48 @@ class Director extends CI_Controller {
 		$this->load->view('directors_list', $data);
 	}
 
+	public function create_new() {
+		$data['errors'] = array();
+
+		if($this->session->userdata('is_logged_in') == true){
+			$this->load->view('create_new_director', $data);
+		}
+		else{
+			$this->load->view('404');
+		}
+	}
+
+	public function confirm_new_director()
+	{
+		if($this->session->userdata('is_logged_in') == true){
+			$this->load->library('form_validation');
+  
+		  	$this->form_validation->set_rules('name', 'Name', 'trim|required');
+		  	$this->form_validation->set_rules('designation', 'Designation', 'trim|required');
+		  	$this->form_validation->set_rules('desc', 'Description', 'required');
+
+		  	if($this->form_validation->run() == FALSE)
+		  	{
+		   		$data['errors'] = validation_errors();
+		   		$this->load->view('create_new_director', $data);
+		  	}
+		  	else
+		  	{
+		  		$this->load->model('director_model');
+		   		$p = $this->login_model->entry_new_director();
+		   		if($p){
+		   			//echo "success";
+		   			$this->director_list();
+		   		}
+		   		else
+		   			echo "failure";
+		  	}
+		}
+
+		else{
+			$this->load->view('404');
+		}
+	}
 
 
 }
