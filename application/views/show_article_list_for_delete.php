@@ -139,7 +139,7 @@
                         
                         <div class="row gutter"><!-- row -->
                         <div class="pull-right back">
-                                    <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info"><span class="glyphicon glyphicon-menu-left" aria-hidden=""></span> Back to Admin Home</a>
+                                    <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info"><span class="glyphicon glyphicon-arrow-left" aria-hidden=""></span> Back to Admin Home</a>
                                 </div>
 
                             <div class="col-lg-12 col-md-12">
