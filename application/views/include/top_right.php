@@ -1,5 +1,4 @@
-
-<?php if($is_logged_in == true): ?>
+<?php if(isset($is_logged_in)): ?>
 
 	<nav class="k-functional-navig"><!-- functional navig -->
         

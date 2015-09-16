@@ -158,6 +158,13 @@
                                             <td><a href="<?php echo base_url(); ?>index.php/article/article_list_delete" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
+                                        <tr>
+                                            <td><b>Directors</b></td>
+                                            <td></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/article" class="btn btn-success">Create New</a></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/article/article_list_delete" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
                                     </table>
 
                                     
