@@ -40,17 +40,7 @@
         
             <div class="col-lg-12">
         
-                <div id="k-site-logo" class="pull-left"><!-- site logo -->
-                
-                    <h1 class="k-logo">
-                        <a href="index.html" title="Home Page">
-                            <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
-                        </a>
-                    </h1>
-                    
-                    <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"></span></a><!-- alternative menu button -->
-            
-                </div><!-- site logo end -->
+                <?php include 'include/logo.php' ?>
 
                 <nav id="k-menu" class="k-main-navig"><!-- main navig -->
         
@@ -129,12 +119,12 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Contact us</h1>
+                                <h1 class="page-title text-primary">Contact us</h1>
                                 
                                 <div class="news-body">
                                     <p class="call-out">At <b>MTLC</b>, we have made it easy to make an appointment with us. Simply enter your details in our postal or E-mail or call us the above numbers.</p>
                                 
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered table-hover">
                                     <caption>Postal Address for all Offices</caption>
                                         
                                         
@@ -144,7 +134,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered table-hover">
                                     <caption>Phone &amp; Fax Number for all Offices</caption>
                                         
                                         
@@ -159,7 +149,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered table-hover">
                                     <caption>E-mail for all Offices</caption>
                                         
                                         
@@ -172,7 +162,7 @@
                                     </table>
 
                                     <div class="page-header">
-                                        <h3>Send Message</h3>
+                                        <h3 class="text-primary">Send Message</h3>
                                         </div>
 
                                         <form class="form-horizontal" method="post" action="<?php echo base_url(); ?>index.php/email">
@@ -204,7 +194,7 @@
                               
                               <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                  <button type="submit" class="btn btn-default">Submit</button>
+                                  <button type="submit" class="btn btn-info">Send</button>
                               </div>
                           </div>
 
