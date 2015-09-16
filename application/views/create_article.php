@@ -112,7 +112,7 @@
                             <div class="col-lg-12 col-md-12">
 
 
-                                <h1 class="page-title">Create Article</h1>
+                                <h1 class="page-title text-primary">Create Article</h1>
                                 
                                 <div class="news-body">
 
