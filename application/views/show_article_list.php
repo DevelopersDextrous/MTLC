@@ -31,6 +31,9 @@
 
 .pagi_wrap{
   margin-bottom: 20px;
+}
+.list-group-item-text
+{
 
 }
 </style>
@@ -147,7 +150,7 @@
                                     
                                     <h3><?php echo $key->title; ?> <small> by <?php echo $key->author; ?></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
                                     
-                                    <p class="list-group-item-text"><?php 
+                                    <p class="list-group-item-text text-muted"><?php 
                                         $string = $key->content;
                                         $string = substr($string, 0,200).' ... ';
                                         echo $string;
