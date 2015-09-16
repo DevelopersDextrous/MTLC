@@ -162,7 +162,7 @@
 
                                         <tr>
                                             <td><b>Directors</b></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/director" class="btn btn-warning">View</a></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/director/director_list" class="btn btn-warning">View</a></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/director/create_new" class="btn btn-success">Create New</a></td>
                                             <td><a href="<?php echo base_url(); ?>index.php/article/load_director_list" class="btn btn-danger">Delete</a></td>
                                         </tr>
