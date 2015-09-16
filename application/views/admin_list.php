@@ -18,7 +18,9 @@
 
     <style>
     table {margin: 10px 0 10px 0;}
-        table tr td {width: 250px; text-align: center;}
+        table tr td {width: 250px; }
+
+        .pull-right li {list-style: none;}
     
     </style>   
 
@@ -37,9 +39,7 @@
             <nav class="k-functional-navig"><!-- functional navig -->
         
                 <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a></li>
                 </ul>
         
             </nav><!-- functional navig end -->
@@ -135,7 +135,7 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Welcome Admin</h1>
+                                <h1 class="page-title">Welcome Admin, <?php echo $this->session->userdata('user_name'); ?></h1>
                                 
                                 <div class="news-body">
                                     <?php 
@@ -170,7 +170,10 @@
                                         <tr>
                                             <td><?php echo $key->first_name." ".$key->last_name; ?></td>
                                             <td><?php echo $key->email; ?></td>
-                                            <td><a href="<?php echo base_url(); ?>index.php/admin/delete_admin?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a></td>
+                                            <td><?php if($key->id != $this->session->userdata('user_id')){ ?>
+                                            <a href="<?php echo base_url(); ?>index.php/admin/delete_admin?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a>
+
+                                              <?php  } ?></td>
                                         </tr>
 
                                         

@@ -19,6 +19,8 @@
     <style>
     table {margin: 10px 0 10px 0;}
         table tr td {width: 250px; text-align: center;}
+
+        .sub-menu li {list-style: none;}
     
     </style>   
 
@@ -37,9 +39,9 @@
             <nav class="k-functional-navig"><!-- functional navig -->
         
                 <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
+
+                    <a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a>
+                    
                 </ul>
         
             </nav><!-- functional navig end -->
@@ -49,7 +51,7 @@
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
                 
                     <h1 class="k-logo">
-                        <a href="index.html" title="Home Page">
+                        <a href="<?php echo base_url(); ?>index.php/home" title="Home Page">
                             <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive" />
                         </a>
                     </h1>
@@ -135,7 +137,7 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Welcome Admin</h1>
+                                <h1 class="page-title">Welcome Admin, <?php echo $this->session->userdata('user_name'); ?></h1>
                                 
                                 <div class="news-body">
                                     
