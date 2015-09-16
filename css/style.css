@@ -208,7 +208,8 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 /* == END BLOG == */
 
 /* == home page slider == */
-#carousel-featured { margin-bottom: 0; }
+
+#carousel-featured, #carousel-featured-new { margin-bottom: 20px; }
 .carousel-indicators { left: inherit; right: 20px; top: 20px; bottom: inherit; height: inherit; width: inherit; margin: 0; }
 .carousel-indicators li, .carousel-indicators .active { height: 15px; width: 15px; border-width: 2px; margin: 1px; }
 .carousel-indicators li { background-color: #222222\9; background-color: rgba( 0, 0, 0, 0.1 ); } 
@@ -222,9 +223,9 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 .carousel-control.right { opacity: 0; -webkit-transition: all 100ms ease-out 0s; -moz-transition: all 100ms ease-out 0s; -o-transition: all 100ms ease-out 0s; transition: all 100ms ease-out 0s; }
 .carousel:hover .carousel-control.left  { left: 0; opacity: 1; }
 .carousel:hover .carousel-control.right { right: 0; opacity: 1; }
-.k-carousel-caption { position: absolute; border-top: 3px solid #ea5644; }
-.caption-content { padding: 30px; }
-.caption-title { font-weight: 700; margin: 0 0 15px 0; padding: 0 0 10px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+.k-carousel-caption { position: absolute; border-top: 3px solid #ea5644; margin-top: -20px;}
+.caption-content { padding: 5px; }
+.caption-title { font-size: 16px; font-weight: 700; margin: 0 0 10px 0; padding: 0 0 5px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 .pos-1-3-right, .pos-1-3-left { width: 33.3%; }
 .pos-2-3-right, .pos-2-3-left  { width: 66.6%; }
 .pos-1-3-left, .pos-2-3-left { left: 0; }
@@ -683,9 +684,14 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 	#drop-down-left > li:first-child { margin-left: 0; }
 	.k-logo img { height: 91px; }
 	
-	.k-carousel-caption .caption-title { font-size: 18px; }
-	.k-carousel-caption p { font-size: 13px; }
-	.k-carousel-caption .caption-content { padding: 20px 30px; }
+	.k-carousel-caption .caption-title { font-size: 16px; }
+	.k-carousel-caption p { font-size: 14px; }
+	.k-carousel-caption .caption-content { padding: 10px 20px; }
+
+	.k-carousel-caption-new .caption-title { font-size: 16px; }
+	.k-carousel-caption-new p { font-size: 14px; }
+	.k-carousel-caption-new .caption-content { padding: 10px 20px; }
+
 }
 /* SM */
 @media (min-width: 768px) and (max-width: 991px) {
