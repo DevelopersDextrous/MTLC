@@ -141,26 +141,32 @@
                                 <h1 class="page-title">Welcome Admin, <?php echo $this->session->userdata('user_name'); ?></h1>
                                 
                                 <div class="news-body">
+
+                                <?php if($stat == 1) { ?>
+                                <table class="table">
+                                            <th>Name</th>
+                                        <th>Email</th>
+                                        <th></th>
                                     <?php 
                                     
                                        
                                     
                                     foreach ($result as $key): 
-                                        if($stat == 1) {
+                                        
                                             ?>
                                         
-                                        <table class="table">
-                                            <th>Name</th>
-                                        <th>Email</th>
-                                        <th></th>
+                                        
                                         
                                         <tr>
                                             <td><?php echo $key->first_name." ".$key->last_name; ?></td>
                                             <td><?php echo $key->email; ?></td>
                                             <td>You are the only admin, data cannot be deleted!</td>
                                         </tr>
-                                        </table>
-                                    <?php } else if ($stat == 0) { ?>
+                                        
+                                    <?php  endforeach;  ?>
+
+                                    </table>
+                                     <?php } elseif ($stat == 0) { ?>
 
                                    
                                 
@@ -169,7 +175,7 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th></th>
-                                        
+                                        <?php foreach ($result as $key): ?>
                                         <tr>
                                             <td><?php echo $key->first_name." ".$key->last_name; ?></td>
                                             <td><?php echo $key->email; ?></td>
@@ -179,13 +185,13 @@
                                               <?php  } ?></td>
                                         </tr>
 
-                                        
+                                         <?php 
+                                    
+                                    endforeach;  } ?>
 
                                     </table>
 
-                                    <?php } 
-                                    
-                                    endforeach; ?>
+                                   
 
 
                                     
