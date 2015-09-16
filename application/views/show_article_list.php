@@ -148,14 +148,14 @@
                             <?php } ?>
 
                             <div class="col-lg-12 col-md-12">
-                                <h1 class="page-title">Articles</h1>
+                                <h1 class="page-title text-warning">Articles</h1>
                                 
                                 <div class="news-body">
                                  <?php foreach ($records->result() as $key): ?>                              
                                 <div class="list-group">
                                   <a href="<?php echo base_url(); ?>index.php/article/show_article?id=<?php echo $key->id; ?>" class="list-group-item">
                                     
-                                    <h3><?php echo $key->title; ?> <small> by <?php echo $key->author; ?></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
+                                    <h3 class="text-primary"><?php echo $key->title; ?> <small> <b>by <?php echo $key->author; ?></b></small><span id="helpBlock" class="help-block">Published on <?php echo $key->date_published; ?></span></h3>
                                     
                                     <p class="list-group-item-text text-muted"><?php 
                                         $string = $key->content;

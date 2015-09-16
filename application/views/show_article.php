@@ -122,8 +122,8 @@
                             <div class="col-lg-12 col-md-12">
 
                                 <?php foreach ($records as $key): ?>
-                                <h1 class="page-title"><?php echo $key->title; ?>
-                                    <small><?php echo $key->subtitle; ?></small>
+                                <h1 class="page-title text-primary"><?php echo $key->title; ?>
+                                    <span id="helpBlock" class="help-block"><h5><?php echo $key->subtitle; ?></h5></span>
                                     <span id="helpBlock" class="help-block"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Published on <?php echo $key->date_published; ?> |<span class="glyphicon glyphicon-user" aria-hidden="true"></span> By <?php echo $key->author; ?></span>
                                 </h1>
 

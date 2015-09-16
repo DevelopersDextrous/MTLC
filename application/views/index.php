@@ -317,6 +317,7 @@
     
     
     <?php include 'include/footer.php';?>
+    <?php include 'include/modal.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
