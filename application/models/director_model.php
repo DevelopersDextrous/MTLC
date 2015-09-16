@@ -26,4 +26,17 @@ class Director_model extends CI_Model {
 			return true;
 		}
 	}
+
+	public function get_total_directors(){
+
+		$q = $this->db->query('SELECT * FROM directors');
+
+		if($q->num_rows() > 0)
+		{
+			foreach ($q->result() as $row) {
+				$data [] = $row;
+			}
+			return $data;
+		}
+	}
 }
