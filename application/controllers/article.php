@@ -82,6 +82,8 @@ class Article extends CI_Controller {
 		$aid = $_GET['id'];
 		$this->load->model('article_model');
 		$data['records'] = $this->article_model->get_article($aid);
+		$this->load->model('director_model');
+		$data['director_count'] = $this->director_model->get_total_directors();
 		$data['article_count'] = $this->article_model->get_total_articles();
 		$this->load->view('show_article', $data);
 

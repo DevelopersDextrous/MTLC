@@ -234,7 +234,7 @@
                                                                 </table>
                                                                 <div>
                                                                     <p>Minimum tax for Companies Tk. 5,000.00</p>
-                                                                    <p><a href="">Contact us</a> today for an appointment and expert advice to aid your situation.</p>
+                                                                    <p><a href="<?php echo base_url(); ?>index.php/service/contact_us">Contact us</a> today for an appointment and expert advice to aid your situation.</p>
                                                                 </div>
 
                                                                 

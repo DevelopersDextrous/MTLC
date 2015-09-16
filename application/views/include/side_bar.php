@@ -10,13 +10,13 @@
 
                 <h1 class="title-widget">Select</h1>
                 <ul>
-                    <li><a href="<?php echo base_url(); ?>/index.php/article/article_list" title="menu item">Articles (<?php $i=0; foreach ($article_count as $key) {
+                    <li><a href="<?php echo base_url(); ?>index.php/article/article_list" title="menu item">Articles (<?php $i=0; foreach ($article_count as $key) {
                         $i++;
                     } echo $i; ?>)</a></li>
 
                 </ul>
                 <ul>
-                    <li><a href="<?php echo base_url(); ?>/index.php/director/director_list" title="menu item">Our Directors (<?php $i=0; foreach ($director_count as $key) {
+                    <li><a href="<?php echo base_url(); ?>index.php/director/director_list" title="menu item">Our Directors (<?php $i=0; foreach ($director_count as $key) {
                         $i++;
                     } echo $i; ?>)</a></li>
 
