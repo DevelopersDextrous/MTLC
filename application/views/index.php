@@ -139,7 +139,7 @@
 
             <div class="row no-gutter fullwidth"><!-- row -->
             
-                <div class="col-lg-6 clearfix"><!-- featured posts slider -->
+                <div class="col-lg-12 clearfix"><!-- featured posts slider -->
                 
                     <div id="carousel-featured" class="carousel slide" data-interval="4000" data-ride="carousel"><!-- featured posts slider wrapper; auto-slide -->
                     
@@ -233,74 +233,7 @@
                         
                 </div><!-- featured posts slider end -->
 
-                <!-- Second Carousel -->
-
-                <div class="col-lg-6 clearfix"><!-- featured posts slider -->
                 
-                    <div id="carousel-featured-new" class="carousel slide" data-interval="4000" data-ride="carousel"><!-- featured posts slider wrapper; auto-slide -->
-                    
-                        <ol class="carousel-indicators"><!-- Indicators -->
-                            <li data-target="#carousel-featured-new" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-featured-new" data-slide-to="1"></li>
-                            <li data-target="#carousel-featured-new" data-slide-to="2"></li>
-                        </ol><!-- Indicators end -->
-                    
-                        <div class="carousel-inner"><!-- Wrapper for slides -->
-                        
-                            <div class="item active">
-                                <img src="<?php echo base_url(); ?>img/banner_1.jpg" alt="Image slide 3" />
-                                <div class="k-carousel-caption-new pos-1-3-right scheme-dark">
-                                    <div class="caption-content">
-                                        <h3 class="caption-title">Learning makes us stronger for life</h3>
-                                        <p>
-                                            content
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url(); ?>img/banner_2.jpg" alt="Image slide 2" />
-                                <div class="k-carousel-caption-new pos-1-3-left scheme-light">
-                                    <div class="caption-content">
-                                        <h3 class="caption-title">Learning makes us stronger for life</h3>
-                                        <p>
-                                            content
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url(); ?>img/banner_3.jpg" alt="Image slide 1" />
-                                <div class="k-carousel-caption-new pos-2-3-right scheme-dark">
-                                    <div class="caption-content">
-                                        <h3 class="caption-title">Learning makes us stronger for life</h3>
-                                        <p>
-                                            content
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-sm btn-danger" title="Button">READ MORE</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            
-                        </div><!-- Wrapper for slides end -->
-                    
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-featured-new" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#carousel-featured-new" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-                        <!-- Controls end -->
-                        
-                    </div><!-- featured posts slider wrapper end -->
-                        
-                </div><!-- featured posts slider end -->
-
-                <!-- Second Carousel End -->
                 
             </div><!-- row end -->
             
@@ -369,7 +302,9 @@
                     </div><!-- inner custom column end -->
                     
                 </div><!-- upcoming events wrapper end -->
-                
+
+
+                <?php include 'include/side_bar.php'; ?>
                 
             
             </div><!-- row end -->
