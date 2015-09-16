@@ -23,9 +23,27 @@
                 </ul>
 
             </li>
+            <li class="widget-container widget_recent_news"><!-- widgets list -->
+               
+                <div class="social-icons">
+
+                    <ul class="list-unstyled list-inline">
+
+                        <li><a href="<?php echo base_url(); ?>index.php/service/contact_us" title="Contact us"><i class="fa fa-lg fa-envelope"></i></a></li>
+                        <li><a href="https://www.twitter.com/" title="Twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" title="Linkedin"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                        <li><a href="https://plus.google.com/" title="Google+"><i class="fa fa-lg fa-google-plus"></i></a></li>
+
+                    </ul>
+
+                </div>
+
+            </li>
         </ul>
 
     </div><!-- inner custom column end -->
+    
 
 </div><!-- sidebar wrapper end -->
 <?php endif; ?>
