@@ -140,7 +140,7 @@
                                     </p>
 
                                     <p style="margin-top:10px;">
-                                        <a href="contact_us">Contact us</a> today for an appointment and expert advice to aid your situation.
+                                        <a href="<?php echo base_url(); ?>index.php/service/contact_us">Contact us</a> today for an appointment and expert advice to aid your situation.
                                     </p>
                                     
                                 </div>
