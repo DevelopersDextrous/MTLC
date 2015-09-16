@@ -1,20 +1,18 @@
-<?php if(isset($is_logged_in)): ?>
+<?php if($this->session->userdata('is_logged_in') == true): ?>
 
 	<nav class="k-functional-navig"><!-- functional navig -->
         
                 <ul class="list-inline pull-right">
 
-                    <li><?php echo $this->session_user_data->user_name; ?></li>
-
-                    <ul class="sub-menu">
+                    
                     	<li><a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a></li>
-                    </ul>
+                    
                 </ul>
         
             </nav>
 
 
-	<?php else: ?>
+	<?php elseif(!(isset($is_logged_in))): ?>
 
 		<nav class="k-functional-navig"><!-- functional navig -->
         
