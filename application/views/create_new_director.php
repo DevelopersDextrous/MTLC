@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create New Admin</title>
+    <title>Create New Director</title>
     
      <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
@@ -32,7 +32,14 @@
     
         <div class="row"><!-- row -->
         
-           <?php include 'include/top_right.php' ?>
+            <nav class="k-functional-navig"><!-- functional navig -->
+        
+                <ul class="list-inline pull-right">
+                    <li><a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a></li>
+                </ul>
+        
+            </nav><!-- functional navig end -->
+        
             <div class="col-lg-12">
         
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
@@ -115,7 +122,7 @@
         
             
             
-            <div class="row no-gutter"><!-- row -->
+            <div class="row no-gutter" style="margin-top: 15px;"><!-- row -->
                 
                 <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
                     
@@ -126,30 +133,32 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Create New Admin</h1>
+                                <h1 class="page-title">Create New Director</h1>
                                 
                                 <div class="news-body">
                                 
-                                    <form action="<?php echo base_url(); ?>index.php/admin/confirm_new_admin" method="post" class="form-horizontal">
+                                    <form action="<?php echo base_url(); ?>index.php/director/confirm_new_director" method="post" class="form-horizontal">
                                         <div class="form-group">
-                                          <label for="first_name" class="col-sm-2 control-label">First Name:</label>
+                                          <label for="name" class="col-sm-2 control-label">Name:</label>
                                           <div class="col-sm-10">
-                                            <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name">
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="Director's Name">
                                           </div>
                                         </div>
                                         
-                                        <div class="form-group">
-                                          <label for="last_name" class="col-sm-2 control-label">Last Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name">
-                                          </div>
-                                        </div>
+                                        
                                         
 
                                         <div class="form-group">
-                                          <label for="user_name" class="col-sm-2 control-label">User Name:</label>
+                                          <label for="branch" class="col-sm-2 control-label">Branch:</label>
                                           <div class="col-sm-10">
-                                            <input type="text" name="user_name" class="form-control" id="user_name" placeholder="User Name">
+                                            <input type="text" name="branch" class="form-control" id="branch" placeholder="Branch">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                          <label for="designation" class="col-sm-2 control-label">Designation:</label>
+                                          <div class="col-sm-10">
+                                            <input type="text" name="designation" class="form-control" id="designation" placeholder="Designation">
                                           </div>
                                         </div>
 
@@ -160,19 +169,12 @@
                                           </div>
                                         </div>
 
-                                        <div class="form-group">
-                                          <label for="password" class="col-sm-2 control-label">Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                       <div class="form-group">
+                                            <label for="desc" class="col-sm-2 control-label">Description</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" id="desc" rows="5" name="desc" placeholder="Write something for this new director..."></textarea>
                                           </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="confirm_password" class="col-sm-2 control-label">Confirm Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="Confirm Password">
-                                          </div>
-                                        </div>
+                                      </div>
 
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
@@ -199,6 +201,8 @@
                     </div><!-- inner custom column end -->
                     
                 </div><!-- doc body wrapper end -->
+                
+                
             
             </div><!-- row end -->
         
@@ -207,7 +211,6 @@
     </div><!-- content wrapper end -->
     
     <?php include 'include/footer.php' ?>
-    <?php include 'include/modal.php' ?>
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>

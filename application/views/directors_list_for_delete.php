@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create New Admin</title>
+    <title>Delete Director</title>
     
-     <!-- Styles -->
+    <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
     <link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
     <link href="<?php echo base_url(); ?>js/dropdown-menu/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
@@ -14,11 +14,33 @@
     <link href="<?php echo base_url(); ?>js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo base_url(); ?>js/audioplayer/audioplayer.css" rel="stylesheet" type="text/css"><!-- Audioplayer -->
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>css/logo.css" rel="stylesheet" type="text/css"><!-- theme styles -->
 
     <style>
-    .pull-right li {list-style: none;}
-    </style>
+    table {margin: 10px 0 10px 0;}
+        table tr td {width: 250px; }
+
+        .pull-right li {list-style: none;}
+
+        .pagi_wrap a, .pagi_wrap strong{
+          padding: 6px 12px;
+          margin-left: -1px;
+          line-height: 1.428571429;
+          text-decoration: none;
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+        }
+        .pagi_wrap strong, .pagi_wrap a:hover{
+          font-weight: normal;
+          background-color: #CCCCFF;
+        }
+
+        .pagi_wrap{
+          margin-bottom: 20px;
+
+        }
+    
+    </style>   
 
   </head>
   
@@ -32,7 +54,14 @@
     
         <div class="row"><!-- row -->
         
-           <?php include 'include/top_right.php' ?>
+            <nav class="k-functional-navig"><!-- functional navig -->
+        
+                <ul class="list-inline pull-right">
+                    <li><a href="<?php echo base_url(); ?>index.php/admin/logout">Sign Out!</a></li>
+                </ul>
+        
+            </nav><!-- functional navig end -->
+        
             <div class="col-lg-12">
         
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
@@ -112,8 +141,6 @@
     <div id="k-body"><!-- content wrapper -->
     
         <div class="container"><!-- container -->
-        
-            
             
             <div class="row no-gutter"><!-- row -->
                 
@@ -126,79 +153,62 @@
                             <div class="col-lg-12 col-md-12">
                     
                                 
-                                <h1 class="page-title">Create New Admin</h1>
+                                <h1 class="page-title">Welcome Admin, <?php echo $this->session->userdata('user_name'); ?></h1>
                                 
                                 <div class="news-body">
+                                    <?php 
+                                    
+                                       
+                                    
+                                    foreach ($records->result() as $key): ?>
+                                        
+
+                                   
                                 
-                                    <form action="<?php echo base_url(); ?>index.php/admin/confirm_new_admin" method="post" class="form-horizontal">
-                                        <div class="form-group">
-                                          <label for="first_name" class="col-sm-2 control-label">First Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name">
-                                          </div>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                          <label for="last_name" class="col-sm-2 control-label">Last Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name">
-                                          </div>
-                                        </div>
-                                        
-
-                                        <div class="form-group">
-                                          <label for="user_name" class="col-sm-2 control-label">User Name:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="user_name" class="form-control" id="user_name" placeholder="User Name">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="email" class="col-sm-2 control-label">Email:</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="email" class="form-control" id="email" placeholder="Email">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="password" class="col-sm-2 control-label">Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label for="confirm_password" class="col-sm-2 control-label">Confirm Password:</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="Confirm Password">
-                                          </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-10">
-
-                                                <input type="submit" class="btn btn-large btn-success" value="Confirm">
-                                                <a href="#" class="btn btn-large btn-info">Cancel</a>
-                                            </div>
-                                        </div>
+                                    <table class="table">
                                     
-                                    <?php if($errors): ?>
-                                        <div class="alert alert-danger">
-                                            <?php echo $errors; ?>                                         
-                                        </div>
-                                    <?php endif; ?>
+                                        <th>Name</th>
+                                        <th>Designation</th>
+                                        <th></th>
+                                        
+                                        <tr>
+                                            <td><?php echo $key->name; ?></td>
+                                            <td><?php echo $key->designation; ?></td>
+                                            <td><a href="<?php echo base_url(); ?>index.php/director/delete_director?id=<?php echo $key->id; ?>" class="btn btn-danger">Delete</a>
+
+                                              </td>
+                                        </tr>
+
+                                        
+
+                                    </table>
+
+                                    <?php 
                                     
-                                    </form>
+                                    endforeach; ?>
+
+
+                                    
+                                    
                                 </div>
                             
                             </div>
                         
                         </div><!-- row end -->
+                        <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="pagi_wrap">
+                                <?php echo $this->pagination->create_links(); ?>
+                            </div>
+                        </div>
+                    </div>
                                 
                     
                     </div><!-- inner custom column end -->
                     
                 </div><!-- doc body wrapper end -->
+                
+                
             
             </div><!-- row end -->
         
@@ -206,9 +216,8 @@
     
     </div><!-- content wrapper end -->
     
-    <?php include 'include/footer.php' ?>
-    <?php include 'include/modal.php' ?>
-
+    
+    <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>
