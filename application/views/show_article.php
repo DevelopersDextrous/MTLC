@@ -28,16 +28,7 @@
 
         <div class="row"><!-- row -->
 
-            <nav class="k-functional-navig"><!-- functional navig -->
-
-                <ul class="list-inline pull-right">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Directions</a></li>
-                </ul>
-
-            </nav><!-- functional navig end -->
-
+            <?php include 'include/top_right.php' ?>
             <div class="col-lg-12">
 
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
@@ -149,7 +140,7 @@
 
                 </div><!-- doc body wrapper end -->
 
-            </div><!-- sidebar wrapper end -->
+           <?php include 'include/side_bar.php' ?>
 
         </div><!-- row end -->
 
@@ -160,6 +151,8 @@
 
 
 <?php include 'include/footer.php';?>
+<?php include 'include/modal.php' ?>
+
 <!-- jQuery -->
 <script src="<?php echo base_url(); ?>jQuery/jquery-2.1.1.min.js"></script>
 <script src="<?php echo base_url(); ?>jQuery/jquery-migrate-1.2.1.min.js"></script>

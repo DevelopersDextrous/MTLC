@@ -65,5 +65,19 @@ class Article_model extends CI_Model {
 			return true;
 		}
 	}
+
+	public function get_total_articles(){
+
+		$q = $this->db->query('SELECT * FROM article');
+
+		if($q->num_rows() > 0)
+		{
+			foreach ($q->result() as $row) {
+				$data [] = $row;
+			}
+			return $data;
+		}
+	}
+
 }
  ?>
