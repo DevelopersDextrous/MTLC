@@ -157,6 +157,7 @@
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                               <button type="submit" class="btn btn-success">Publish!</button>
+                              <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info">Cancel</a>
                           </div>
                       </div>
                     <?php if($errors): ?>
