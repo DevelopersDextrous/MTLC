@@ -48,7 +48,7 @@
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
 
-                        <li>
+                        <li id="menu_1">
                             <a href="#" class="Pages Collection" title="Our Provided Services">Services</a>
                             <ul class="sub-menu">
                                 <li><a href="news-single.html">Acquisitions &amp; Mergers</a></li>
@@ -99,13 +99,13 @@
                             </ul>
                         </li>
 
-                        <li>
+                        <li id="menu_2">
                             <a href="#" class="Pages Collection" title="Our Consultancy Services">Business Advisory</a>
                             <ul class="sub-menu">
                                 
                             </ul>
                         </li>
-                        <li>
+                        <li id="menu_3">
                             <a href="about-us.html" title="How things work">About Us</a>
                             <ul class="sub-menu">
                                 <li><a href="#">Company Profile</a></li>
@@ -120,7 +120,7 @@
 
                             </ul>
                         </li>
-                        <li>
+                        <li id="menu_4">
                             <a href="contact-us.html" title="Office Contacts">Contact Us</a>
                         </li>
                     </ul>
