@@ -134,7 +134,9 @@
                         
                             <div class="col-lg-12 col-md-12">
                     
-                                
+                                <div class="pull-right back">
+                                    <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info"><span class="glyphicon glyphicon-menu-left" aria-hidden=""></span> Back to Admin Home</a>
+                                </div>
                                 <h1 class="page-title">Welcome Admin, <?php echo $this->session->userdata('user_name'); ?></h1>
                                 
                                 <div class="news-body">

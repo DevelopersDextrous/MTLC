@@ -38,6 +38,8 @@
 #designation {margin-top: -1px; font-weight: 400;}
 #email {text-decoration: underline; font-weight: bold;}
 .dir {border-bottom: 1px solid rgba( 0, 0, 0, 0.05 );}
+
+.back { width: 300px; height: 50px; text-align: right;}
 </style>
 </head>
 
@@ -141,7 +143,11 @@
                     <div class="col-padded"><!-- inner custom column -->
                         
                         <div class="row gutter"><!-- row -->
-
+                            <?php if($this->session->userdata('is_logged_in') == true){?>
+                                <div class="pull-right back">
+                                    <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info"><span class="glyphicon glyphicon-menu-left" aria-hidden=""></span> Back to Admin Home</a>
+                                </div> 
+                            <?php } ?>
                             <div class="col-lg-12 col-md-12">
                                 <h1 class="page-title">Directors</h1>
                                 

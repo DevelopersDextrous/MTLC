@@ -178,7 +178,7 @@
                                             <div class="col-sm-offset-2 col-sm-10">
 
                                                 <input type="submit" class="btn btn-large btn-success" value="Confirm">
-                                                <a href="#" class="btn btn-large btn-info">Cancel</a>
+                                                <a href="<?php echo base_url(); ?>index.php/admin" class="btn btn-large btn-info">Cancel</a>
                                             </div>
                                         </div>
                                     
