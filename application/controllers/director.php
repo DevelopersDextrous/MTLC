@@ -20,6 +20,15 @@ class Director extends CI_Controller {
 		$this->load->view('directors_list', $data);
 	}
 
+	public function create_new() {
+		$data['errors'] = array();
 
+		if($this->session->userdata('is_logged_in') == true){
+			$this->load->view('create_new_director', $data);
+		}
+		else{
+			$this->load->view('404');
+		}
+	}
 
 }
