@@ -35,8 +35,8 @@
                 <div id="k-site-logo" class="pull-left"><!-- site logo -->
                 
                     <h1 class="k-logo">
-                        <a href="index.html" title="Home Page">
-                            <img src="img/site-logo.png" alt="Site Logo" class="img-responsive"/>
+                        <a href="<?php echo base_url(); ?>index.php/home" title="Home Page">
+                            <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive"/>
                         </a>
                     </h1>
                     
@@ -154,7 +154,7 @@
                         <div class="carousel-inner"><!-- Wrapper for slides -->
                         
                             <div class="item active">
-                                <img src="img/slide-3.jpg" alt="Image slide 3" />
+                                <img src="<?php echo base_url(); ?>img/slide-3.jpg" alt="Image slide 3" />
                                 <div class="k-carousel-caption pos-1-3-right scheme-dark">
                                 	<div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -166,7 +166,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/slide-2.jpg" alt="Image slide 2" />
+                                <img src="<?php echo base_url(); ?>img/slide-2.jpg" alt="Image slide 2" />
                                 <div class="k-carousel-caption pos-1-3-left scheme-light">
                                 	<div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -178,7 +178,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/slide-1.jpg" alt="Image slide 1" />
+                                <img src="<?php echo base_url(); ?>img/slide-1.jpg" alt="Image slide 1" />
                                 <div class="k-carousel-caption pos-2-3-right scheme-dark">
                                 	<div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -193,7 +193,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/slide-4.jpg" alt="Image slide 4" />
+                                <img src="<?php echo base_url(); ?>img/slide-4.jpg" alt="Image slide 4" />
                                 <div class="k-carousel-caption pos-2-3-left scheme-light">
                                 	<div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -208,7 +208,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/slide-5.jpg" alt="Image slide 5" />
+                                <img src="<?php echo base_url(); ?>img/slide-5.jpg" alt="Image slide 5" />
                                 <div class="k-carousel-caption pos-c-2-3 scheme-dark no-bg">
                                 	<div class="caption-content">
                                         <h3 class="caption-title title-giant">Learning makes us stronger for life</h3>
@@ -248,7 +248,7 @@
                         <div class="carousel-inner"><!-- Wrapper for slides -->
                         
                             <div class="item active">
-                                <img src="img/banner_1.jpg" alt="Image slide 3" />
+                                <img src="<?php echo base_url(); ?>img/banner_1.jpg" alt="Image slide 3" />
                                 <div class="k-carousel-caption-new pos-1-3-right scheme-dark">
                                     <div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -260,7 +260,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/banner_2.jpg" alt="Image slide 2" />
+                                <img src="<?php echo base_url(); ?>img/banner_2.jpg" alt="Image slide 2" />
                                 <div class="k-carousel-caption-new pos-1-3-left scheme-light">
                                     <div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>
@@ -272,7 +272,7 @@
                             </div>
                             
                             <div class="item">
-                                <img src="img/banner_3.jpg" alt="Image slide 1" />
+                                <img src="<?php echo base_url(); ?>img/banner_3.jpg" alt="Image slide 1" />
                                 <div class="k-carousel-caption-new pos-2-3-right scheme-dark">
                                     <div class="caption-content">
                                         <h3 class="caption-title">Learning makes us stronger for life</h3>

@@ -69,7 +69,7 @@
                 <nav id="k-menu" class="k-main-navig"><!-- main navig -->
 
                     <ul id="drop-down-left" class="k-dropdown-menu">
-                        <li>
+                        <li id="menu1">
                             <a href="news.html" title="Our School News">News</a>
                         </li>
                         <li>
