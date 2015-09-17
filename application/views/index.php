@@ -32,30 +32,22 @@
         
             <div class="col-lg-12">
         
-                <div id="k-site-logo" class="pull-left"><!-- site logo -->
-                
-                    <h1 class="k-logo">
-                        <a href="<?php echo base_url(); ?>index.php/home" title="Home Page">
-                            <img src="<?php echo base_url(); ?>img/site-logo.png" alt="Site Logo" class="img-responsive"/>
-                        </a>
-                    </h1>
-                    
-                    <a id="mobile-nav-switch" href="#drop-down-left"><span class="alter-menu-icon"></span></a><!-- alternative menu button -->
-            
-                </div><!-- site logo end -->
+                <?php include 'include/logo.php' ?>
 
                 <nav id="k-menu" class="k-main-navig"><!-- main navig -->
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
+                        <li class="" id="menu_0">
+                            <a href="<?php echo base_url(); ?>index.php/home" class="" title="<b>Millenium Tax &amp; Law Chamber</b>">Home</a>
+                        </li>
 
                         <li id="menu_1">
                             <a href="#" class="Pages Collection" title="<b>Our Provided Services</b>">Services</a>
                             <ul class="sub-menu">
                                 
                                 <li><a href="#">Internal Auditing</a></li>
-                                <li><a href="#">Company Secretarial Matters</a></li>
                                 <li><a href="#">Tax</a></li>
-                                <li><a href="#">VAT</a></li>
+                                <li><a href="<?php echo base_url(); ?>index.php/service/vat">VAT</a></li>
                                 <li><a href="#">IRC</a></li>
                                 <li><a href="#">ERC</a></li>
                                 <li><a href="#">BOI</a></li>
@@ -70,7 +62,7 @@
                                 <li><a href="#">Trade Mark</a></li>
                                 <li><a href="#">Patent, Design</a></li>
                                 <li><a href="#">Copyright</a></li>
-                                <li><a href="#">CHambers Membership</a></li>
+                                <li><a href="#">Chambers Membership</a></li>
                                 <li><a href="#">Registration of Company</a></li>
                                 <li><a href="#">Partnership</a></li>
                                 <li><a href="#">Society/NGO/Cooperatives, Arbitration, Project Profile etc.</a></li>
