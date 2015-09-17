@@ -27,16 +27,17 @@
     <div id="k-head" class="container"><!-- container + head wrapper -->
     
         <div class="row"><!-- row -->
-        
-            <?php include 'include/top_right.php';?>
-        
-            <div class="col-lg-12">
+        <?php include 'include/top_right.php';?>
+         <div class="col-lg-12">
         
                 <?php include 'include/logo.php' ?>
                 <?php include 'include/menu_bar.php' ?>
                 
             
             </div>
+            
+        
+           
             
         </div><!-- row end -->
     

@@ -147,6 +147,21 @@ img.alignleft, img.aligncenter, img.alignright { margin-bottom: 5px; }
 /*#drop-down-left ul a:hover, #drop-down-left ul li.dropdown-menu-hover > a { background-color: #F9F9F9; }*/
 #drop-down-left ul .dropdown-menu-sub-indicator:after { content: ""; display: block; position: absolute; top: 50%; margin-top: -6px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 6px solid #CCC; }
 /*#drop-down-left a:hover, #drop-down-left li.dropdown-menu-hover > a, #drop-down-left li.current-menu-item > a {  background-color: #FFF; }*/
+
+#drop-down-left2 > li { margin-left: 50px; }
+#drop-down-left2 > li:first-child { /*margin-left: 0;*/ }
+#drop-down-left2 a { font-size: 13px; font-weight: 700; padding: 20px 0 10px !important; text-transform: uppercase; border-left: none; border-right: none; border-top: 5px solid #EFEFEF; -webkit-transition: all .25s; -moz-transition: all .25s; transition: all .25s; }
+#drop-down-left2 .k-item-desc { font-size: 12px; font-weight: 300; color: #959595; text-transform: none; -moz-opacity: 0.7; -webkit-opacity: 0.7; opacity: 0.7; }
+/*#drop-down-left2 a:link, #drop-down-left a:visited { color: #363636; background-color: transparent; }*/
+/* drops */
+#drop-down-left2 ul { background: none; border: none; }
+#drop-down-left2 ul a { padding: 10px 15px !important; font-size: 12px; font-weight: 400; border-top: none; border-bottom: none; border-left: 1px solid #CCC; /*text-transform: none;*/ }
+/*#drop-down-left2 ul a:link, #drop-down-left2 ul a:visited { color: #363636; background-color: #FFF; }*/
+/*#drop-down-left2 ul a:hover, #drop-down-left2 ul li.dropdown-menu-hover > a { background-color: #F9F9F9; }*/
+#drop-down-left2 ul .dropdown-menu-sub-indicator:after { content: ""; display: block; position: absolute; top: 50%; margin-top: -6px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 6px solid #CCC; }
+/*#drop-down-left2 a:hover, #drop-down-left2 li.dropdown-menu-hover > a, #drop-down-left2 li.current-menu-item > a {  background-color: #FFF; }*/
+
+
 /* smaller devices menu */
 #mobile-nav-switch { display: none; width: 24px; position: absolute; right: 0; top: 50%; margin-top: -12px; z-index: 8888; }
 #mobile-nav-switch:focus { outline: none; }
@@ -170,7 +185,7 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 #menu_4 > a:hover, #menu_4 > ul > li > a:hover {color: #B1C6C3; background-color: #FAFF56}
 
 .top_right .admin:hover {background-color: #7FD76E; color: #ea5644;}
-
+.top_right .btn-default {color: #7FD76E; border: none; text-transform: none;}
 
 /* == END dropdown-menu kustom style == */
 
