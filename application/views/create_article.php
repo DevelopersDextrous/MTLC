@@ -57,7 +57,7 @@
 
             <div class="row no-gutter"><!-- row -->
 
-                <div class="col-lg-8 col-md-8"><!-- doc body wrapper -->
+                <div class="col-lg-12 col-md-12"><!-- doc body wrapper -->
 
                     <div class="col-padded"><!-- inner custom column -->
 

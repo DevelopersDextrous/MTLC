@@ -2,7 +2,7 @@
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li class="" id="menu_0">
-                            <a href="<?php echo base_url(); ?>index.php/home" class="" title="<b>Millenium Tax &amp; Law Chamber</b>">Home</a>
+                            <a href="<?php echo base_url(); ?>index.php/home" class="Pages Collection" title="<b>Millenium Tax &amp; Law Chamber</b>">Home</a>
                         </li>
 
                         <li id="menu_1">
@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                         <li id="menu_4">
-                            <a href="contact-us.html" title="<b>Office Contacts</b>">Contact Us</a>
+                            <a href="<?php echo base_url(); ?>index.php/service/contact_us" title="<b>Office Contacts</b>">Contact Us</a>
                         </li>
                     </ul>
         
