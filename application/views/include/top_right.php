@@ -7,8 +7,8 @@
                         <a href="#" class="Pages Collection" title="" style="text-transform: none; border-top: none;"><?php echo $this->session->userdata('user_name')."  "; ?>
                         <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                         <ul class="sub-menu">
-                            <li><a href="<?php echo base_url(); ?>index.php/admin" style="text-transform: none;">Admin Home</a></li>
-                            <li><a href="<?php echo base_url(); ?>index.php/admin/logout" style="text-transform: none;">Sign Out!</a></li>
+                            <li><a href="<?php echo base_url(); ?>index.php/admin" style="text-transform: none; font-weight: bold;" class="admin">Admin Home</a></li>
+                            <li><a href="<?php echo base_url(); ?>index.php/admin/logout" style="text-transform: none; font-weight: bold;" class="admin">Sign Out!</a></li>
                         </ul>
                     </li>
 
