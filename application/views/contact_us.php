@@ -101,7 +101,7 @@
                                         
                                         <tr>
                                             <td><span class="glyphicon glyphicon-send" aria-hidden="true"> </span> <b> Address:</b></td>
-                                            <td>akperd@yahoo.com</td>
+                                            <td style="text-decoration: underline;">akperd@yahoo.com</td>
                                         </tr>
 
                                         
