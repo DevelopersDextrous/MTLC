@@ -162,7 +162,8 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 #navigation-mobile li a:link, #navigation-mobile li a:visited { color: #636363; }
 #navigation-mobile li a:hover, #navigation-mobile li a:focus { color: #ea5644; }
 
-#menu_0 > a:hover {color: #F08837; background-color: #0DFA78;}
+#menu_1 > ul > li, #menu_2 > ul > li, #menu_3 > ul > li, #menu_3 > ul > li > ul > li {background-color: white;}
+#menu_0 > a:hover {color: #AF55C8; background-color: #0DFA78;}
 #menu_1 > a:hover, #menu_1 > ul > li > a:hover {color: #ea5644; background-color: #36C0A0;}
 #menu_2 > a:hover, #menu_2 > ul > li > a:hover {color: #FFF860; background-color: #4FCB11;}
 #menu_3 > a:hover, #menu_3 > ul > li > a:hover, #menu_3 > ul > li > ul > li > a:hover {color: #C06036; background-color: #56FFDD}
